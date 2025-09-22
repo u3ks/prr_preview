@@ -1,0 +1,243 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_metrics_glo_1982-2022",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "properties": {
+    "title": "MHW metrics",
+    "description": "Extreme event statistics - CAREHeat project",
+    "start_datetime": "1991-01-01T00:00:00Z",
+    "end_datetime": "2020-01-01T00:00:00Z",
+    "license": "CC-BY-4.0",
+    "created": "2024-01-01T00:00:00Z",
+    "git_information": "main/b7ae3f4",
+    "website": "https://careheat.org/",
+    "version": "v2023d",
+    "changelog": "v2023d: included absolute temperature in metrics;\nv2023c: masked categories with dates from metrics;\nv2023b: updated metadata for MHW/MCS and changed clipping;\nv2023a: produced MHW datasets with/without preprocessing",
+    "institution": "CNR-ISMAR",
+    "author": "Federico Serva, Angela Landolfi, Salvatore Marullo, Emanuele Organelli, Andrea Pisano, Vincenzo de Toma, Rosalia Santoleri",
+    "contact": "careheat-data@artov.ismar.cnr.it",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "date_start": {
+        "type": "data",
+        "description": "date_start",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "YYYYMMDD",
+        "attrs": {
+          "long_name": "date_start",
+          "units": "YYYYMMDD"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "date_end": {
+        "type": "data",
+        "description": "date_end",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "YYYYMMDD",
+        "attrs": {
+          "long_name": "date_end",
+          "units": "YYYYMMDD"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "intensity_cumulative": {
+        "type": "data",
+        "description": "intensity_cumulative",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K day",
+        "attrs": {
+          "long_name": "intensity_cumulative",
+          "units": "K day"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "intensity_mean": {
+        "type": "data",
+        "description": "intensity_mean",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "intensity_mean",
+          "units": "K"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "intensity_max": {
+        "type": "data",
+        "description": "intensity_max",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "intensity_max",
+          "units": "K"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "rate_onset": {
+        "type": "data",
+        "description": "rate_onset",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K day-1",
+        "attrs": {
+          "long_name": "rate_onset",
+          "units": "K day-1"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "heterogeneity": {
+        "type": "data",
+        "description": "heterogeneity",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "heterogeneity",
+          "units": "K"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      },
+      "intensity_mean_abs": {
+        "type": "data",
+        "description": "intensity_mean_abs",
+        "dimensions": [
+          "nevent",
+          "lat",
+          "lon"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "intensity_mean_abs",
+          "units": "K"
+        },
+        "shape": [
+          1000,
+          180,
+          360
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./careheat-marine-heatwaves-cold-spells/CCI2D_1x1_MHW_metrics_glo_1982-2022.nc",
+      "type": "application/x-netcdf",
+      "title": "MHW metrics",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "careheat-marine-heatwaves-cold-spells"
+}

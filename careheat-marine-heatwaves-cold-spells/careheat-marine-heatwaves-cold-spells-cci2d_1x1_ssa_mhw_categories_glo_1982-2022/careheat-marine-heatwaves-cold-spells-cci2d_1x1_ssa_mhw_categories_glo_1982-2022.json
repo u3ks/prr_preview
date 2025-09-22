@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
   ],
-  "id": "careheat-marine-heatwaves-cold-spells-mcs_categories",
+  "id": "careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mhw_categories_glo_1982-2022",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -39,13 +39,13 @@
     90
   ],
   "properties": {
-    "title": "MCS categories",
+    "title": "MHW categories",
     "description": "Extreme event statistics - CAREHeat project",
     "start_datetime": "1991-01-01T00:00:00Z",
     "end_datetime": "2020-01-01T00:00:00Z",
     "license": "CC-BY-4.0",
     "created": "2024-01-01T00:00:00Z",
-    "git_information": "main/074d32e",
+    "git_information": "main/b7ae3f4",
     "website": "https://careheat.org/",
     "version": "v2023d",
     "changelog": "v2023d: included absolute temperature in metrics;\nv2023c: masked categories with dates from metrics;\nv2023b: updated metadata for MHW/MCS and changed clipping;\nv2023a: produced MHW datasets with/without preprocessing",
@@ -108,9 +108,9 @@
   ],
   "assets": {
     "data": {
-      "href": "./careheat-marine-heatwaves-cold-spells/CCI2D_1x1_ssa_MCS_categories_glo_1982-2022.nc",
-      "type": "application/vnd+zarr",
-      "title": "MCS categories",
+      "href": "./careheat-marine-heatwaves-cold-spells/CCI2D_1x1_ssa_MHW_categories_glo_1982-2022.nc",
+      "type": "application/x-netcdf",
+      "title": "MHW categories",
       "roles": [
         "data"
       ]

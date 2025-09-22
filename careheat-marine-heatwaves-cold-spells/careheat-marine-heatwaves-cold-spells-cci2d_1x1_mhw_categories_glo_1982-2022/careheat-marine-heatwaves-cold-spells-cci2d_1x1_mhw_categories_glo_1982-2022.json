@@ -1,0 +1,120 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_categories_glo_1982-2022",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "properties": {
+    "title": "MHW categories",
+    "description": "Extreme event statistics - CAREHeat project",
+    "start_datetime": "1991-01-01T00:00:00Z",
+    "end_datetime": "2020-01-01T00:00:00Z",
+    "license": "CC-BY-4.0",
+    "created": "2024-01-01T00:00:00Z",
+    "git_information": "main/b7ae3f4",
+    "website": "https://careheat.org/",
+    "version": "v2023d",
+    "changelog": "v2023d: included absolute temperature in metrics;\nv2023c: masked categories with dates from metrics;\nv2023b: updated metadata for MHW/MCS and changed clipping;\nv2023a: produced MHW datasets with/without preprocessing",
+    "institution": "CNR-ISMAR",
+    "author": "Federico Serva, Angela Landolfi, Salvatore Marullo, Emanuele Organelli, Andrea Pisano, Vincenzo de Toma, Rosalia Santoleri",
+    "contact": "careheat-data@artov.ismar.cnr.it",
+    "cube:dimensions": {
+      "time": {
+        "extent": [
+          "1982-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
+        ],
+        "description": "time",
+        "step": "P1DT0H0M0S",
+        "type": "temporal"
+      }
+    },
+    "cube:variables": {
+      "category": {
+        "type": "data",
+        "description": "extreme_event_category",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "unit": "1",
+        "attrs": {
+          "long_name": "extreme_event_category",
+          "units": "1"
+        },
+        "shape": [
+          14975,
+          180,
+          360
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./careheat-marine-heatwaves-cold-spells/CCI2D_1x1_MHW_categories_glo_1982-2022.nc",
+      "type": "application/x-netcdf",
+      "title": "MHW categories",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "careheat-marine-heatwaves-cold-spells"
+}

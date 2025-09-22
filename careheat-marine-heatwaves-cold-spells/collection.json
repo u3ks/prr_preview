@@ -12,7 +12,42 @@
     },
     {
       "rel": "item",
-      "href": "./careheat-marine-heatwaves-cold-spells-mcs_categories/careheat-marine-heatwaves-cold-spells-mcs_categories.json",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mcs_categories_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mcs_categories_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mcs_metrics_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mcs_metrics_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mhw_metrics_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mhw_metrics_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mhw_categories_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_ssa_mhw_categories_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_categories_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_categories_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_metrics_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_mhw_metrics_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_mcs_metrics_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_mcs_metrics_glo_1982-2022.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-cci2d_1x1_mcs_categories_glo_1982-2022/careheat-marine-heatwaves-cold-spells-cci2d_1x1_mcs_categories_glo_1982-2022.json",
       "type": "application/geo+json"
     }
   ],
