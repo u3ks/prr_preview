@@ -39,8 +39,8 @@
     90
   ],
   "properties": {
-    "title": "MCS metrics",
-    "description": "Extreme event statistics - CAREHeat project",
+    "title": "Detrended (SSA) MCS metrics",
+    "description": "Detrended (SSA) Extreme event statistics - CAREHeat project",
     "start_datetime": "1991-01-01T00:00:00Z",
     "end_datetime": "2020-01-01T00:00:00Z",
     "license": "CC-BY-4.0",
