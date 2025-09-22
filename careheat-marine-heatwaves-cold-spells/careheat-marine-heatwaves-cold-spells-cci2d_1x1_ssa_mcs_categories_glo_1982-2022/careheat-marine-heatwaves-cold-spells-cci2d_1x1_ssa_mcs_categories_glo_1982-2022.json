@@ -110,7 +110,7 @@
     "data": {
       "href": "./careheat-marine-heatwaves-cold-spells/CCI2D_1x1_ssa_MCS_categories_glo_1982-2022.nc",
       "type": "application/x-netcdf",
-      "title": "MCS categories",
+      "title": "Detrended (SSA) MCS categories",
       "roles": [
         "data"
       ]
