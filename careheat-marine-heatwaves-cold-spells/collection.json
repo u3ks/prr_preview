@@ -1,0 +1,41 @@
+{
+  "type": "Collection",
+  "id": "careheat-marine-heatwaves-cold-spells",
+  "stac_version": "1.1.0",
+  "description": "Marine heatwaves (MHWs) and cold spells (MCSs) prepared by the National Research Council - Institute of Marine Sciences (CNR-ISMAR, Italy) within the ESA-funded CAREHeat project. The catalogues are based on the ESA-CCI sea surface temperature (SST) dataset (available from https://doi.org/10.24381/cds.cf608234) for the period 1982-2022, on a regular 1\u00b0x1\u00b0 longitude-latitude grid.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs"
+    },
+    {
+      "rel": "item",
+      "href": "./careheat-marine-heatwaves-cold-spells-mcs_categories/careheat-marine-heatwaves-cold-spells-mcs_categories.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "Marine heatwaves and cold spells events based on ESA-CCI SSTs",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1982-01-01T00:00:00Z",
+          "2022-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}
