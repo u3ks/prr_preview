@@ -52,7 +52,28 @@
     "institution": "CNR-ISMAR",
     "author": "Federico Serva, Angela Landolfi, Salvatore Marullo, Emanuele Organelli, Andrea Pisano, Vincenzo de Toma, Rosalia Santoleri",
     "contact": "careheat-data@artov.ismar.cnr.it",
-    "cube:dimensions": {},
+    "cube:dimensions": {
+      "lon": {
+        "axis": "x",
+        "extent": [
+          -179.5,
+          179.5
+        ],
+        "step": 1.0,
+        "description": "longitude",
+        "type": "spatial"
+      },
+      "lat": {
+        "axis": "y",
+        "extent": [
+          -89.5,
+          89.5
+        ],
+        "step": 1.0,
+        "description": "latitude",
+        "type": "spatial"
+      }
+    },
     "cube:variables": {
       "date_start": {
         "type": "data",

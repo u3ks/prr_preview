@@ -61,6 +61,26 @@
         "description": "time",
         "step": "P1DT0H0M0S",
         "type": "temporal"
+      },
+      "lon": {
+        "axis": "x",
+        "extent": [
+          -179.5,
+          179.5
+        ],
+        "step": 1.0,
+        "description": "longitude",
+        "type": "spatial"
+      },
+      "lat": {
+        "axis": "y",
+        "extent": [
+          -89.5,
+          89.5
+        ],
+        "step": 1.0,
+        "description": "latitude",
+        "type": "spatial"
       }
     },
     "cube:variables": {
