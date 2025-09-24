@@ -2,39 +2,39 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [],
-  "id": "tccas-sodankylae-insitu_package",
+  "id": "tccas-iberia-insitu_package",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          32.0,
-          65.0
+          -2.505,
+          38.501
         ],
         [
-          32.0,
-          69.0
+          -2.505,
+          42.997
         ],
         [
-          18.0,
-          69.0
+          -8.496,
+          42.997
         ],
         [
-          18.0,
-          65.0
+          -8.496,
+          38.501
         ],
         [
-          32.0,
-          65.0
+          -2.505,
+          38.501
         ]
       ]
     ]
   },
   "bbox": [
-    18.0,
-    65.0,
-    32.0,
-    69.0
+    -8.496,
+    38.501,
+    -2.505,
+    42.997
   ],
   "properties": {
     "license": "CC-BY-4.0",
@@ -46,29 +46,29 @@
       "rel": "root",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     },
     {
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     }
   ],
   "assets": {
     "Insitu package": {
-      "href": "./tccas-sodankylae/sodankyla-insitu-package.tgz",
+      "href": "./tccas-iberia/lasmajadas-insitu-package.tgz",
       "type": "application/tar+gzip",
       "roles": [
         "data"
       ]
     }
   },
-  "collection": "tccas-sodankylae"
+  "collection": "tccas-iberia"
 }

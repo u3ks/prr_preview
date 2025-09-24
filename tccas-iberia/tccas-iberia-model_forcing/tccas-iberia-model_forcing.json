@@ -2,39 +2,39 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [],
-  "id": "tccas-sodankylae-model_forcing",
+  "id": "tccas-iberia-model_forcing",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          32.0,
-          65.0
+          -2.505,
+          38.501
         ],
         [
-          32.0,
-          69.0
+          -2.505,
+          42.997
         ],
         [
-          18.0,
-          69.0
+          -8.496,
+          42.997
         ],
         [
-          18.0,
-          65.0
+          -8.496,
+          38.501
         ],
         [
-          32.0,
-          65.0
+          -2.505,
+          38.501
         ]
       ]
     ]
   },
   "bbox": [
-    18.0,
-    65.0,
-    32.0,
-    69.0
+    -8.496,
+    38.501,
+    -2.505,
+    42.997
   ],
   "properties": {
     "license": "CC-BY-4.0",
@@ -46,57 +46,57 @@
       "rel": "root",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     },
     {
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
     }
   ],
   "assets": {
-    "static-site-level": {
-      "href": "./tccas-sodankylae/FI-Sod_staticforcing.nc",
+    "static": {
+      "href": "./tccas-iberia/ES-LM1_staticforcing.nc",
       "type": "application/x-netcdf",
       "roles": [
         "data"
       ]
     },
-    "time-dependent (ERA5) - site level": {
-      "href": "./tccas-sodankylae/FI-Sod_dynforcing-era5_20090101-20211231_with-lwdown.nc",
+    "time-dependent (ERA5)": {
+      "href": "./tccas-iberia/ES-LM1_dynforcing-era5_20090101-20211231_with-lwdown.nc",
       "type": "application/x-netcdf",
       "roles": [
         "data"
       ]
     },
-    "time-dependent (in-situ) - site level": {
-      "href": "./tccas-sodankylae/FI-Sod_dynforcing-insitu_20090101-20211231_with-insitu-lwdown.nc",
+    "time-dependent (in-situ)": {
+      "href": "./tccas-iberia/ES-LM1_dynforcing-insitu_20140401-20220930_with-insitu-lwdown.nc",
       "type": "application/x-netcdf",
       "roles": [
         "data"
       ]
     },
     "static-regional": {
-      "href": "./tccas-sodankylae/sodankyla-region_cgls-pft-crops-redistributed_staticforcing.nc",
+      "href": "./tccas-iberia/majadas-region_cgls-pft-moli2bare_staticforcing.nc",
       "type": "application/x-netcdf",
       "roles": [
         "data"
       ]
     },
-    "time-dependent (ERA5) - regional": {
-      "href": "./tccas-sodankylae/sodankyla-region_dynforcing_era5_2009-2021.nc",
+    "time-dependent (ERA5)-regional": {
+      "href": "./tccas-iberia/majadas-region_dynforcing_era5_2009-2021.nc",
       "type": "application/x-netcdf",
       "roles": [
         "data"
       ]
     }
   },
-  "collection": "tccas-sodankylae"
+  "collection": "tccas-iberia"
 }

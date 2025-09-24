@@ -2,39 +2,39 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [],
-  "id": "tccas-sodankylae-documentation",
+  "id": "tccas-netherlands-documentation",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          32.0,
-          65.0
+          11.477,
+          47.502
         ],
         [
-          32.0,
-          69.0
+          11.477,
+          51.999
         ],
         [
-          18.0,
-          69.0
+          4.502,
+          51.999
         ],
         [
-          18.0,
-          65.0
+          4.502,
+          47.502
         ],
         [
-          32.0,
-          65.0
+          11.477,
+          47.502
         ]
       ]
     ]
   },
   "bbox": [
-    18.0,
-    65.0,
-    32.0,
-    69.0
+    4.502,
+    47.502,
+    11.477,
+    51.999
   ],
   "properties": {
     "license": "CC-BY-4.0",
@@ -46,43 +46,43 @@
       "rel": "root",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
     },
     {
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
     }
   ],
   "assets": {
     "TCCAS user manual.": {
-      "href": "./tccas-sodankylae/TCCAS_manual.pdf",
+      "href": "./tccas-netherlands/TCCAS_manual.pdf",
       "type": "application/pdf",
       "roles": [
         "documentation"
       ]
     },
     "Satellite Data Uncertainty analysis Scientific Report": {
-      "href": "./tccas-sodankylae/D7.pdf",
+      "href": "./tccas-netherlands/D7.pdf",
       "type": "application/pdf",
       "roles": [
         "documentation"
       ]
     },
     "Campaign Data User Manual": {
-      "href": "./tccas-sodankylae/D11_CDUM-all_sites.pdf",
+      "href": "./tccas-netherlands/D11_CDUM-all_sites.pdf",
       "type": "application/pdf",
       "roles": [
         "documentation"
       ]
     }
   },
-  "collection": "tccas-sodankylae"
+  "collection": "tccas-netherlands"
 }

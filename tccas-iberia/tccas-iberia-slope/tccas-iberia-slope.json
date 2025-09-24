@@ -1,0 +1,228 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-iberia-slope",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -2.505,
+          38.501
+        ],
+        [
+          -2.505,
+          42.997
+        ],
+        [
+          -8.496,
+          42.997
+        ],
+        [
+          -8.496,
+          38.501
+        ],
+        [
+          -2.505,
+          38.501
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -8.496,
+    38.501,
+    -2.505,
+    42.997
+  ],
+  "properties": {
+    "title": "Slope",
+    "description": "Dataset with variables related to Slope.",
+    "start_datetime": "2011-01-01T00:00:00Z",
+    "end_datetime": "2021-12-31T00:00:00Z",
+    "region": "iberia",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "Slope": {
+        "type": "data",
+        "description": "Slope from ASCAT data",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "dB/deg",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "dB/deg",
+          "long_name": "Slope from ASCAT data",
+          "geospatial_resolution": "25-34km",
+          "geospatial_sampling": 0.125,
+          "footprint_diameter_unit": "degrees",
+          "comment": "Resolution is dependent on location. Therefore, range of resolution is given. Approximate footprint at this location: 0.113\u00b0 lat x0.144\u00b0 lon"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "Slope_Masked": {
+        "type": "data",
+        "description": "Slope from ASCAT data masked for frozen soils and snow cover before processing",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "dB/deg",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "dB/deg",
+          "long_name": "Slope from ASCAT data masked for frozen soils and snow cover before processing",
+          "geospatial_resolution": "25-34km",
+          "geospatial_sampling": 0.125,
+          "footprint_diameter_unit": "degrees",
+          "comment": "Resolution is dependent on location. Therefore, range of resolution is given. Approximate footprint at this location: 0.113\u00b0 lat x0.144\u00b0 lon"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "Slope_Noise": {
+        "type": "data",
+        "description": "Noise of slope data",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "dB/deg",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "dB/deg",
+          "long_name": "Noise of slope data",
+          "geospatial_resolution": "25-34km",
+          "geospatial_sampling": 0.125,
+          "footprint_diameter_unit": "degrees",
+          "comment": "Resolution is dependent on location. Therefore, range of resolution is given. Approximate footprint at this location: 0.113\u00b0 lat x0.144\u00b0 lon"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "Slope_Noise_Masked": {
+        "type": "data",
+        "description": "Noise of masked slope data",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "dB/deg",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "dB/deg",
+          "long_name": "Noise of masked slope data",
+          "geospatial_resolution": "25-34km",
+          "geospatial_sampling": 0.125,
+          "footprint_diameter_unit": "degrees",
+          "comment": "Resolution is dependent on location. Therefore, range of resolution is given. Approximate footprint at this location: 0.113\u00b0 lat x0.144\u00b0 lon"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "qflag": {
+        "type": "data",
+        "description": "Quality flag for masked data to identify stable slope calculations",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "int",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "int",
+          "long_name": "Quality flag for masked data to identify stable slope calculations",
+          "geospatial_resolution": "25-34km",
+          "geospatial_sampling": 0.125,
+          "footprint_diameter_unit": "degrees",
+          "comment": "Qflag of 1 indicates possible unstable slope calculation as a result of too few local slopes"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "lat": {
+        "type": "data",
+        "description": "latitude",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "degrees north",
+        "attrs": {
+          "units": "degrees north",
+          "long_name": "latitude",
+          "comment": "vector point representing center of footprint"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "lon": {
+        "type": "data",
+        "description": "longitude",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "degrees east",
+        "attrs": {
+          "units": "degrees east",
+          "long_name": "longitude",
+          "comment": "vector point representing center of footprint"
+        },
+        "shape": [
+          6505142
+        ]
+      },
+      "yymmddHH": {
+        "type": "data",
+        "dimensions": [
+          "nobs",
+          "ntc"
+        ],
+        "attrs": {},
+        "shape": [
+          6505142,
+          4
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons Attribution 4.0 International licence (CC BY 4.0) (https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-iberia/ASCAT_slope_lm.nc",
+      "type": "application/x-netcdf",
+      "title": "Slope",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-iberia"
+}

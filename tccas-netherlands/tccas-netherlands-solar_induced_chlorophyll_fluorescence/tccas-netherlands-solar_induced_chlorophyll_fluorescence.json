@@ -1,0 +1,225 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-netherlands-solar_induced_chlorophyll_fluorescence",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          11.477,
+          47.502
+        ],
+        [
+          11.477,
+          51.999
+        ],
+        [
+          4.502,
+          51.999
+        ],
+        [
+          4.502,
+          47.502
+        ],
+        [
+          11.477,
+          47.502
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    4.502,
+    47.502,
+    11.477,
+    51.999
+  ],
+  "properties": {
+    "title": "Solar Induced Chlorophyll Fluorescence",
+    "description": "Dataset with variables related to Solar Induced Chlorophyll Fluorescence.",
+    "start_datetime": "2018-05-01T00:00:00Z",
+    "end_datetime": "2018-05-01T00:00:00Z",
+    "region": "netherlands",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "latitude_corners": {
+        "type": "data",
+        "description": "Corner latitude of the measurement",
+        "dimensions": [
+          "sounding_dim",
+          "vertex_dim"
+        ],
+        "unit": "degrees_north",
+        "attrs": {
+          "long_name": "Corner latitude of the measurement",
+          "units": "degrees_north"
+        },
+        "shape": [
+          3023311,
+          4
+        ]
+      },
+      "longitude_corners": {
+        "type": "data",
+        "description": "Corner longitude of the measurement",
+        "dimensions": [
+          "sounding_dim",
+          "vertex_dim"
+        ],
+        "unit": "degrees_east",
+        "attrs": {
+          "long_name": "Corner longitude of the measurement",
+          "units": "degrees_east"
+        },
+        "shape": [
+          3023311,
+          4
+        ]
+      },
+      "latitude": {
+        "type": "data",
+        "description": "Latitude of the sounding center",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "degrees_north",
+        "attrs": {
+          "long_name": "Latitude of the sounding center",
+          "units": "degrees_north"
+        },
+        "shape": [
+          3023311
+        ]
+      },
+      "longitude": {
+        "type": "data",
+        "description": "Longitude of the sounding center",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "degrees_east",
+        "attrs": {
+          "long_name": "Longitude of the sounding center",
+          "units": "degrees_east"
+        },
+        "shape": [
+          3023311
+        ]
+      },
+      "yymmddHHMMSS": {
+        "type": "data",
+        "description": "Time point of observation",
+        "dimensions": [
+          "sounding_dim",
+          "ntc"
+        ],
+        "unit": "Time given as UTC",
+        "attrs": {
+          "long_name": "Time point of observation",
+          "units": "Time given as UTC"
+        },
+        "shape": [
+          3023311,
+          6
+        ]
+      },
+      "SIF_743nm": {
+        "type": "data",
+        "description": "Retrieved Solar Induced Fluorescence  at 743 nm",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "mW/m^2/sr/nm",
+        "attrs": {
+          "long_name": "Retrieved Solar Induced Fluorescence  at 743 nm",
+          "units": "mW/m^2/sr/nm"
+        },
+        "shape": [
+          3023311
+        ]
+      },
+      "SIF_743nm_uncertainty": {
+        "type": "data",
+        "description": "Uncertainty of Solar Induced Fluorescence at 743 nm",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "mW/m^2/sr/nm",
+        "attrs": {
+          "long_name": "Uncertainty of Solar Induced Fluorescence at 743 nm",
+          "units": "mW/m^2/sr/nm"
+        },
+        "shape": [
+          3023311
+        ]
+      },
+      "SIF_735nm": {
+        "type": "data",
+        "description": "Retrieved Solar Induced Fluorescence  at 735 nm",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "mW/m^2/sr/nm",
+        "attrs": {
+          "long_name": "Retrieved Solar Induced Fluorescence  at 735 nm",
+          "units": "mW/m^2/sr/nm"
+        },
+        "shape": [
+          3023311
+        ]
+      },
+      "SIF_735nm_uncertainty": {
+        "type": "data",
+        "description": "Uncertainty of Solar Induced Fluorescence at 735 nm",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "unit": "mW/m^2/sr/nm",
+        "attrs": {
+          "long_name": "Uncertainty of Solar Induced Fluorescence at 735 nm",
+          "units": "mW/m^2/sr/nm"
+        },
+        "shape": [
+          3023311
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons Attribution 4.0 International licence (CC BY 4.0) (https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-netherlands/Reusel_SIF_TROPOMI_final.nc4",
+      "type": "application/x-netcdf",
+      "title": "Solar Induced Chlorophyll Fluorescence",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-netherlands"
+}

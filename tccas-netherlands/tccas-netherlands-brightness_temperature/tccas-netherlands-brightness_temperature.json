@@ -1,0 +1,332 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-netherlands-brightness_temperature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          11.477,
+          47.502
+        ],
+        [
+          11.477,
+          51.999
+        ],
+        [
+          4.502,
+          51.999
+        ],
+        [
+          4.502,
+          47.502
+        ],
+        [
+          11.477,
+          47.502
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    4.502,
+    47.502,
+    11.477,
+    51.999
+  ],
+  "properties": {
+    "title": "Brightness temperature",
+    "description": "Dataset with variables related to Brightness temperature.",
+    "start_datetime": "2010-01-13T00:00:00Z",
+    "end_datetime": "2010-01-13T00:00:00Z",
+    "region": "netherlands",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "lat": {
+        "type": "data",
+        "description": "Latitude",
+        "dimensions": [
+          "npts"
+        ],
+        "unit": "degree",
+        "attrs": {
+          "long_name": "Latitude",
+          "units": "degree"
+        },
+        "shape": [
+          351
+        ]
+      },
+      "lon": {
+        "type": "data",
+        "description": "Longitude",
+        "dimensions": [
+          "npts"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Longitude",
+          "units": "Degree"
+        },
+        "shape": [
+          351
+        ]
+      },
+      "inc": {
+        "type": "data",
+        "description": "Incidence Angle, middle of range",
+        "dimensions": [
+          "nbin"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Incidence Angle, middle of range",
+          "units": "Degree"
+        },
+        "shape": [
+          14
+        ]
+      },
+      "dinc": {
+        "type": "data",
+        "description": "Range of incidence angle; range = inc+/- 0.5*dinc",
+        "dimensions": [
+          "nbin"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Range of incidence angle; range = inc+/- 0.5*dinc",
+          "units": "Degree"
+        },
+        "shape": [
+          14
+        ]
+      },
+      "BT_H": {
+        "type": "data",
+        "description": "Mean value of Brightness temperatures per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Brightness temperatures per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "BT_V": {
+        "type": "data",
+        "description": "Mean value of Brightness Temperatures per bin, V polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Brightness Temperatures per bin, V polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Pixel_Radiometric_Accuracy_H": {
+        "type": "data",
+        "description": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Pixel_Radiometric_Accuracy_V": {
+        "type": "data",
+        "description": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Footprint_Axis1": {
+        "type": "data",
+        "description": "Elliptical footprint major semi-axis",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "km",
+        "attrs": {
+          "long_name": "Elliptical footprint major semi-axis",
+          "units": "km",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Footprint_Axis2": {
+        "type": "data",
+        "description": "Elliptical footprint minor semi-axis",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "km",
+        "attrs": {
+          "long_name": "Elliptical footprint minor semi-axis",
+          "units": "km",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Nb_RFI_Flags": {
+        "type": "data",
+        "description": "Number of Views (among Nview) with RFI contamination",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Number of Views (among Nview) with RFI contamination",
+          "units": "-",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "Nviews": {
+        "type": "data",
+        "description": "Number of TB per bin",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Number of TB per bin",
+          "units": "-",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          14,
+          351
+        ]
+      },
+      "yymmddHHMMSS": {
+        "type": "data",
+        "description": "time point of observation",
+        "dimensions": [
+          "ntime",
+          "ntc"
+        ],
+        "unit": "- ,-,-,h, mn, sec",
+        "attrs": {
+          "long_name": "time point of observation",
+          "comment": "time coordinate given as UTC",
+          "units": "- ,-,-,h, mn, sec",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8461,
+          6
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons license to apply : Attribution (BY) : http://creativecommons.org/licenses/?lang=en, see https://www.catds.fr/Products/Catalogue-CPDC/Catds-products-from-Sextant#/metadata/6294e08c-baec-4282-a251-33fee22ec67f"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for the Netherlands region (including Reusel)"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-netherlands/SMOS_L3TB__reusel.nc",
+      "type": "application/x-netcdf",
+      "title": "Brightness temperature",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-netherlands"
+}

@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "tccas-iberia",
+  "stac_version": "1.1.0",
+  "description": "The Terrestrial Carbon Community Assimilation System (TCCAS) is built around the coupled D&B terrestrial biosphere model. D&B has been newly developed based on the well-established DALEC and BETHY models and builds on the strengths of each component model. In particular, D&B combines the dynamic simulation of the carbon pools and canopy phenology of DALEC with the dynamic simulation of water pools, and the canopy model of photosynthesis and energy balance of BETHY. D&B includes a set of observation operators for optical as well as active and passive microwave observations. The focus of TCCAS is the combination of this diverse array of observational data streams with the D&B model into a consistent picture of the terrestrial carbon, water, and energy cycles. TCCAS applies a variational assimilation approach that adjusts a combination of initial pool sizes and process parameters to match the observational data streams. This dataset includes Satelite, Field and model forcing data sets for the Iberian region, including Majadas del Tietar.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-vegetation_optical_depth_(smos)/tccas-iberia-vegetation_optical_depth_(smos).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-slope/tccas-iberia-slope.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-solar_induced_chlorophyll_fluorescence/tccas-iberia-solar_induced_chlorophyll_fluorescence.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-fraction_of_absorbed_photosynthetic_active_radiation,_leaf_area_index/tccas-iberia-fraction_of_absorbed_photosynthetic_active_radiation,_leaf_area_index.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-soil_moisture/tccas-iberia-soil_moisture.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-brightness_temperature/tccas-iberia-brightness_temperature.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-vegetation_optical_depth/tccas-iberia-vegetation_optical_depth.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-land_surface_temperature/tccas-iberia-land_surface_temperature.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-photochemical_reflectance_index/tccas-iberia-photochemical_reflectance_index.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-solar_induced_chlorophyll_fluorescence_(oco2)/tccas-iberia-solar_induced_chlorophyll_fluorescence_(oco2).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-insitu_package/tccas-iberia-insitu_package.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-model_forcing/tccas-iberia-model_forcing.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-iberia-documentation/tccas-iberia-documentation.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "Terrestrial Carbon Community Assimilation System: Database for Iberian region (including Majadas del Tietar)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.496,
+          38.501,
+          -2.505,
+          42.997
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "various"
+}
