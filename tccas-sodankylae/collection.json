@@ -1,0 +1,96 @@
+{
+  "type": "Collection",
+  "id": "tccas-sodankylae",
+  "stac_version": "1.1.0",
+  "description": "The Terrestrial Carbon Community Assimilation System (TCCAS) is built around the coupled D&B terrestrial biosphere model. D&B has been newly developed based on the well-established DALEC and BETHY models and builds on the strengths of each component model. In particular, D&B combines the dynamic simulation of the carbon pools and canopy phenology of DALEC with the dynamic simulation of water pools, and the canopy model of photosynthesis and energy balance of BETHY. D&B includes a set of observation operators for optical as well as active and passive microwave observations. The focus of TCCAS is the combination of this diverse array of observational data streams with the D&B model into a consistent picture of the terrestrial carbon, water, and energy cycles. TCCAS applies a variational assimilation approach that adjusts a combination of initial pool sizes and process parameters to match the observational data streams. This dataset includes Satelite, Field and model forcing data sets for Sodankyl\u00e4 and Lapland region.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-fraction_of_absorbed_photosynthetic_active_radiation_leaf_area_index_(jrc-tip)/tccas-sodankylae-fraction_of_absorbed_photosynthetic_active_radiation_leaf_area_index_(jrc-tip).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-brightness_temperature_(smos_tb)/tccas-sodankylae-brightness_temperature_(smos_tb).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-soil_moisture_and_vegetation_optical_depth_(smos_sm_and_smos_l-vod)/tccas-sodankylae-soil_moisture_and_vegetation_optical_depth_(smos_sm_and_smos_l-vod).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-solar_induced_chlorophyll_fluorescence_(sentinel_5p)/tccas-sodankylae-solar_induced_chlorophyll_fluorescence_(sentinel_5p).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-slope_(ascat_slope)/tccas-sodankylae-slope_(ascat_slope).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-photochemical_reflectance_index_(modis_pri)/tccas-sodankylae-photochemical_reflectance_index_(modis_pri).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-land_surface_temperature_(modis_lst)/tccas-sodankylae-land_surface_temperature_(modis_lst).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-solar_induced_chlorophyll_fluorescence_(oco-2_sif)/tccas-sodankylae-solar_induced_chlorophyll_fluorescence_(oco-2_sif).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-vegetation_optical_depth_(amsr-2_vod)/tccas-sodankylae-vegetation_optical_depth_(amsr-2_vod).json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-insitu_package/tccas-sodankylae-insitu_package.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-model_forcing/tccas-sodankylae-model_forcing.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./tccas-sodankylae-documentation/tccas-sodankylae-documentation.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          18.0,
+          65.0,
+          32.0,
+          69.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "various"
+}

@@ -1,0 +1,332 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-sodankylae-brightness_temperature_(smos_tb)",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "title": "Brightness temperature (SMOS TB)",
+    "description": "Dataset with variables related to Brightness temperature (SMOS TB).",
+    "start_datetime": "2010-01-13T00:00:00Z",
+    "end_datetime": "2010-01-13T00:00:00Z",
+    "region": "sodankylae",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "lat": {
+        "type": "data",
+        "description": "Latitude",
+        "dimensions": [
+          "npts"
+        ],
+        "unit": "degree",
+        "attrs": {
+          "long_name": "Latitude",
+          "units": "degree"
+        },
+        "shape": [
+          432
+        ]
+      },
+      "lon": {
+        "type": "data",
+        "description": "Longitude",
+        "dimensions": [
+          "npts"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Longitude",
+          "units": "Degree"
+        },
+        "shape": [
+          432
+        ]
+      },
+      "inc": {
+        "type": "data",
+        "description": "Incidence Angle, middle of range",
+        "dimensions": [
+          "nbin"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Incidence Angle, middle of range",
+          "units": "Degree"
+        },
+        "shape": [
+          14
+        ]
+      },
+      "dinc": {
+        "type": "data",
+        "description": "Range of incidence angle; range = inc+/- 0.5*dinc",
+        "dimensions": [
+          "nbin"
+        ],
+        "unit": "Degree",
+        "attrs": {
+          "long_name": "Range of incidence angle; range = inc+/- 0.5*dinc",
+          "units": "Degree"
+        },
+        "shape": [
+          14
+        ]
+      },
+      "BT_H": {
+        "type": "data",
+        "description": "Mean value of Brightness temperatures per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Brightness temperatures per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "BT_V": {
+        "type": "data",
+        "description": "Mean value of Brightness Temperatures per bin, V polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Brightness Temperatures per bin, V polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Pixel_Radiometric_Accuracy_H": {
+        "type": "data",
+        "description": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Pixel_Radiometric_Accuracy_V": {
+        "type": "data",
+        "description": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Mean value of Radiometric Accuracy, per bin, H polarisation",
+          "units": "K",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Footprint_Axis1": {
+        "type": "data",
+        "description": "Elliptical footprint major semi-axis",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "km",
+        "attrs": {
+          "long_name": "Elliptical footprint major semi-axis",
+          "units": "km",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Footprint_Axis2": {
+        "type": "data",
+        "description": "Elliptical footprint minor semi-axis",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "km",
+        "attrs": {
+          "long_name": "Elliptical footprint minor semi-axis",
+          "units": "km",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Nb_RFI_Flags": {
+        "type": "data",
+        "description": "Number of Views (among Nview) with RFI contamination",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Number of Views (among Nview) with RFI contamination",
+          "units": "-",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "Nviews": {
+        "type": "data",
+        "description": "Number of TB per bin",
+        "dimensions": [
+          "ntime",
+          "nbin",
+          "npts"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Number of TB per bin",
+          "units": "-",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          14,
+          432
+        ]
+      },
+      "yymmddHHMMSS": {
+        "type": "data",
+        "description": "time point of observation",
+        "dimensions": [
+          "ntime",
+          "ntc"
+        ],
+        "unit": "- ,-,-,h, mn, sec",
+        "attrs": {
+          "long_name": "time point of observation",
+          "comment": "time coordinate given as UTC",
+          "units": "- ,-,-,h, mn, sec",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          8545,
+          6
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons license to apply : Attribution (BY) : http://creativecommons.org/licenses/?lang=en, see https://www.catds.fr/Products/Catalogue-CPDC/Catds-products-from-Sextant#/metadata/6294e08c-baec-4282-a251-33fee22ec67f"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-sodankylae/SMOS_L3TB__sodankyla.nc",
+      "type": "application/x-netcdf",
+      "title": "Brightness temperature (SMOS TB)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

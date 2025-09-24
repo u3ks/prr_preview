@@ -1,0 +1,88 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "tccas-sodankylae-documentation",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "license": "CC-BY-4.0",
+    "description": "Documentation for the TCCAS project datasets.",
+    "datetime": "2012-07-01T11:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "TCCAS user manual.": {
+      "href": "/d/tccas-sodankylae/TCCAS_manual.pdf",
+      "type": "application/pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "Satellite Data Uncertainty analysis Scientific Report": {
+      "href": "/d/tccas-sodankylae/D7.pdf",
+      "type": "application/pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "Campaign Data User Manual": {
+      "href": "/d/tccas-sodankylae/D11_CDUM-all_sites.pdf",
+      "type": "application/pdf",
+      "roles": [
+        "documentation"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

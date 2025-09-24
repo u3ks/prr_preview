@@ -1,0 +1,189 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-sodankylae-photochemical_reflectance_index_(modis_pri)",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "title": "Photochemical Reflectance Index (MODIS PRI)",
+    "description": "Dataset with variables related to Photochemical Reflectance Index (MODIS PRI).",
+    "start_datetime": "2011-01-01T00:00:00Z",
+    "end_datetime": "2011-01-01T00:00:00Z",
+    "region": "sodankylae",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          718598.0,
+          1502523.125
+        ],
+        "description": "x coordinate of projection",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          7229068.5,
+          7671995.5
+        ],
+        "description": "y coordinate of projection",
+        "type": "spatial"
+      }
+    },
+    "cube:variables": {
+      "lat_vertices": {
+        "type": "data",
+        "description": "latitude_of_pixel_corners",
+        "dimensions": [
+          "nv",
+          "nobslat"
+        ],
+        "unit": "meters_north",
+        "attrs": {
+          "comment": "ordering SW/SE/NE/NW",
+          "long_name": "latitude_of_pixel_corners",
+          "units": "meters_north"
+        },
+        "shape": [
+          4,
+          479
+        ]
+      },
+      "lon_vertices": {
+        "type": "data",
+        "description": "longitude_of_pixel_corners",
+        "dimensions": [
+          "nv",
+          "nobslon"
+        ],
+        "unit": "meters_east",
+        "attrs": {
+          "comment": "ordering SW/SE/NE/NW",
+          "long_name": "longitude_of_pixel_corners",
+          "units": "meters_east"
+        },
+        "shape": [
+          4,
+          847
+        ]
+      },
+      "yymmddHHMMSS": {
+        "type": "data",
+        "dimensions": [
+          "time",
+          "t1"
+        ],
+        "attrs": {},
+        "shape": [
+          3650,
+          6
+        ]
+      },
+      "sinusoidal": {
+        "type": "data",
+        "description": "CRS definition",
+        "dimensions": [],
+        "attrs": {
+          "grid_mapping_name": "sinusoidal",
+          "false_easting": 0.0,
+          "false_northing": 0.0,
+          "longitude_of_central_meridian": 0.0,
+          "long_name": "CRS definition",
+          "longitude_of_prime_meridian": 0.0,
+          "semi_major_axis": 6371007.181,
+          "inverse_flattening": 0.0,
+          "spatial_ref": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not_specified_based_on_custom_spheroid\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+          "GeoTransform": "718134.7106179479 926.6254330554165 0 7672458.585700301 0 -926.6254330558337 "
+        },
+        "shape": []
+      },
+      "PRI": {
+        "type": "data",
+        "dimensions": [
+          "time",
+          "columns",
+          "rows"
+        ],
+        "attrs": {
+          "Units": "Dimensionless",
+          "Pixel Size": "926.625 meters",
+          "Region": "SODANKYLA",
+          "Orientation": "North",
+          "Corner Coordinates  (meters)": "Upper Left  (  718134.711, 7672458.586) Lower Left  (  718134.711, 7228605.004) Upper Right  ( 1502986.453, 7672458.586) Lower Right  ( 1502986.453, 7228605.004)"
+        },
+        "shape": [
+          3650,
+          847,
+          479
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons Attribution 4.0 International licence (CC BY 4.0). The product uses data from the original source: MYD11A1 (LST) and MYDOCGA (PRI) available from https://e4ftl01.cr.usgs.gov/MOLA/"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-sodankylae/PRI_ESTIMATE_SODANKYLA_SINUSOIDAL.nc",
+      "type": "application/x-netcdf",
+      "title": "Photochemical Reflectance Index (MODIS PRI)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

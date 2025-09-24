@@ -1,0 +1,74 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "tccas-sodankylae-insitu_package",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "license": "CC-BY-4.0",
+    "description": "Insitu package with FloX, VOD and Miscellaneous field datasets related to the TCCAS project. ",
+    "datetime": "2012-07-01T11:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "Insitu package": {
+      "href": "./tccas-sodankylae/sodankyla-insitu-package.tgz",
+      "type": "application/tar+gzip",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

@@ -1,0 +1,442 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-sodankylae-vegetation_optical_depth_(amsr-2_vod)",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "title": "Vegetation Optical Depth (AMSR-2 VOD)",
+    "description": "Dataset with variables related to Vegetation Optical Depth (AMSR-2 VOD).",
+    "start_datetime": "2012-07-01T11:00:00Z",
+    "end_datetime": "2021-12-31T00:00:00Z",
+    "region": "sodankylae",
+    "cube:dimensions": {
+      "time": {
+        "extent": [
+          "2012-07-01T10:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "cube:variables": {
+      "FLAGS": {
+        "type": "data",
+        "description": "Contains the following binary flags (2**n) with N: \n 0: No Data \n 1: Snow/Frozen \n 2: Rain/Desert \n 3: Effective temperature below 274.15 K \n 4: - \n 5: - \n 6: - \n 7: L-band not present on sensor \n 8: RFI L-band \n 9: No L-band retrieval, MPDI below 0.0001 \n 10: No model convergence for L-band retrieval, SM is 0 or 1 \n 11: Low quality L-band retrieval due to dense vegetation \n 12: C1-band not present on sensor \n 13: RFI C1-band \n 14: No C1-band retrieval, MPDI below 0.0001 \n 15: No model convergence for C1-band retrieval, SM is 0 or 1 \n 16: Low quality C1-band retrieval due to dense vegetation \n 17: C2-band not present on sensor \n 18: RFI C2-band \n 19: No C2-band retrieval, MPDI below 0.0001 \n 20: No model convergence for C2-band retrieval, SM is 0 or 1 \n 21: Low quality C2-band retrieval due to dense vegetation \n 22: X-band not present on sensor \n 23: RFI X-band \n 24: No X-band retrieval, MPDI below 0.0001 \n 25: No model convergence for X-band retrieval, SM is 0 or 1 \n 26: Low quality X-band retrieval due to dense vegetation \n 27: Ku-band not present on sensor \n 28: RFI Ku-band \n 29: No Ku-band retrieval, MPDI below 0.0001 \n 30: No model convergence for Ku-band retrieval, SM is 0 or 1 \n 31: Low quality Ku-band retrieval due to dense vegetation",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "binary_flag",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "binary_flag",
+          "long_name": "Binary format flagging",
+          "description": "Contains the following binary flags (2**n) with N: \n 0: No Data \n 1: Snow/Frozen \n 2: Rain/Desert \n 3: Effective temperature below 274.15 K \n 4: - \n 5: - \n 6: - \n 7: L-band not present on sensor \n 8: RFI L-band \n 9: No L-band retrieval, MPDI below 0.0001 \n 10: No model convergence for L-band retrieval, SM is 0 or 1 \n 11: Low quality L-band retrieval due to dense vegetation \n 12: C1-band not present on sensor \n 13: RFI C1-band \n 14: No C1-band retrieval, MPDI below 0.0001 \n 15: No model convergence for C1-band retrieval, SM is 0 or 1 \n 16: Low quality C1-band retrieval due to dense vegetation \n 17: C2-band not present on sensor \n 18: RFI C2-band \n 19: No C2-band retrieval, MPDI below 0.0001 \n 20: No model convergence for C2-band retrieval, SM is 0 or 1 \n 21: Low quality C2-band retrieval due to dense vegetation \n 22: X-band not present on sensor \n 23: RFI X-band \n 24: No X-band retrieval, MPDI below 0.0001 \n 25: No model convergence for X-band retrieval, SM is 0 or 1 \n 26: Low quality X-band retrieval due to dense vegetation \n 27: Ku-band not present on sensor \n 28: RFI Ku-band \n 29: No Ku-band retrieval, MPDI below 0.0001 \n 30: No model convergence for Ku-band retrieval, SM is 0 or 1 \n 31: Low quality Ku-band retrieval due to dense vegetation",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "lat_vertices": {
+        "type": "data",
+        "description": "latitude_of_pixel_corners",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "unit": "degrees_north",
+        "attrs": {
+          "long_name": "latitude_of_pixel_corners",
+          "units": "degrees_north",
+          "comment": "ordering SW/SE/NE/NW",
+          "_ChunkSizes": "16U, 4U; // uint"
+        },
+        "shape": [
+          16,
+          4
+        ]
+      },
+      "lon_vertices": {
+        "type": "data",
+        "description": "longitude_of_pixel_corners",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "unit": "degrees_east",
+        "attrs": {
+          "long_name": "longitude_of_pixel_corners",
+          "units": "degrees_east",
+          "comment": "ordering SW/SE/NE/NW",
+          "_ChunkSizes": "56U, 4U; // uint"
+        },
+        "shape": [
+          56,
+          4
+        ]
+      },
+      "yymmddHH": {
+        "type": "data",
+        "description": "time point of observation",
+        "dimensions": [
+          "time",
+          "ntc"
+        ],
+        "unit": "yymmddHH",
+        "attrs": {
+          "units": "yymmddHH",
+          "long_name": "time point of observation",
+          "comment": "time coordinate given as UTC",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          3471,
+          4
+        ]
+      },
+      "SCANTIME": {
+        "type": "data",
+        "description": "Observation time on UTC day of overpass",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "attrs": {
+          "FillValue": -9999,
+          "long_name": "Observation time on UTC day of overpass",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "SM_C1": {
+        "type": "data",
+        "description": "Soil moisture from AMSR2 C1-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "m3/m3",
+          "long_name": "Soil moisture from AMSR2 C1-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "SM_C2": {
+        "type": "data",
+        "description": "Soil moisture from AMSR2 C2-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "m3/m3",
+          "long_name": "Soil moisture from AMSR2 C2-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "SM_KU": {
+        "type": "data",
+        "description": "Soil moisture from AMSR2 Ku-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "m3/m3",
+          "long_name": "Soil moisture from AMSR2 Ku-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "SM_X": {
+        "type": "data",
+        "description": "Soil moisture from AMSR2 X-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "m3/m3",
+          "long_name": "Soil moisture from AMSR2 X-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "TSURF": {
+        "type": "data",
+        "description": "Land surface temperature derived from from AMSR2 Ka-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "K",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "K",
+          "long_name": "Land surface temperature derived from from AMSR2 Ka-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_C1": {
+        "type": "data",
+        "description": "Vegetation Optical Depth from AMSR2 C1-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Vegetation Optical Depth from AMSR2 C1-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_C2": {
+        "type": "data",
+        "description": "Vegetation Optical Depth from AMSR2 C2-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Vegetation Optical Depth from AMSR2 C2-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_KU": {
+        "type": "data",
+        "description": "Vegetation Optical Depth from AMSR2 Ku-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Vegetation Optical Depth from AMSR2 Ku-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_X": {
+        "type": "data",
+        "description": "Vegetation Optical Depth from AMSR2 X-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Vegetation Optical Depth from AMSR2 X-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_C1_noise": {
+        "type": "data",
+        "description": "Noise of Vegetation Optical Depth from AMSR2 C1-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Noise of Vegetation Optical Depth from AMSR2 C1-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_C2_noise": {
+        "type": "data",
+        "description": "Noise of Vegetation Optical Depth from AMSR2 C2-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Noise of Vegetation Optical Depth from AMSR2 C2-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      },
+      "VOD_X_noise": {
+        "type": "data",
+        "description": "Noise of Vegetation Optical Depth from AMSR2 X-band",
+        "dimensions": [
+          "lat",
+          "lon",
+          "time"
+        ],
+        "unit": "-",
+        "attrs": {
+          "FillValue": -9999,
+          "units": "-",
+          "long_name": "Noise of Vegetation Optical Depth from AMSR2 X-band",
+          "_ChunkSizes": "16U, 56U; // uint"
+        },
+        "shape": [
+          16,
+          56,
+          3471
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Creative Commons Attribution 4.0 International licence (CC BY 4.0) (https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-sodankylae/AMSR2_so.nc",
+      "type": "application/x-netcdf",
+      "title": "Vegetation Optical Depth (AMSR-2 VOD)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

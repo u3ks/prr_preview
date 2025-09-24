@@ -1,0 +1,450 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "tccas-sodankylae-soil_moisture_and_vegetation_optical_depth_(smos_sm_and_smos_l-vod)",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "title": "Soil moisture and Vegetation Optical Depth (SMOS SM and SMOS L-VOD)",
+    "description": "Dataset with variables related to Soil moisture and Vegetation Optical Depth (SMOS SM and SMOS L-VOD).",
+    "start_datetime": "2011-01-02T00:00:00Z",
+    "end_datetime": "2011-01-02T00:00:00Z",
+    "region": "sodankylae",
+    "cube:dimensions": {},
+    "cube:variables": {
+      "DGG": {
+        "type": "data",
+        "description": "DGG",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "DGG",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "lat": {
+        "type": "data",
+        "description": "Latitude",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "degrees_north",
+        "attrs": {
+          "long_name": "Latitude",
+          "units": "degrees_north"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "lon": {
+        "type": "data",
+        "description": "Longitude",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "degrees_east",
+        "attrs": {
+          "long_name": "Longitude",
+          "units": "degrees_east"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "yymmddHHMMSS": {
+        "type": "data",
+        "description": "Aquisition time (UTC)",
+        "dimensions": [
+          "nobs",
+          "ntc"
+        ],
+        "unit": "year month day hour min sec",
+        "attrs": {
+          "long_name": "Aquisition time (UTC)",
+          "units": "year month day hour min sec"
+        },
+        "shape": [
+          9541286,
+          6
+        ]
+      },
+      "soil_moisture": {
+        "type": "data",
+        "description": "SM",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "long_name": "SM",
+          "units": "m3/m3",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "soil_moisture_dqx": {
+        "type": "data",
+        "description": "SM Dqx",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "m3/m3",
+        "attrs": {
+          "long_name": "SM Dqx",
+          "units": "m3/m3"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "tau": {
+        "type": "data",
+        "description": "VOD",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "VOD",
+          "units": "-",
+          "footprint_diameter": "43",
+          "footprint_diameter_unit": "km"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "tau_dqx": {
+        "type": "data",
+        "description": "VOD Dqx",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "VOD Dqx",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "Chi2": {
+        "type": "data",
+        "description": "Goodness of fit",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Goodness of fit",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "Chi2P": {
+        "type": "data",
+        "description": "Goodness of fit probability",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Goodness of fit probability",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "FL_forest": {
+        "type": "data",
+        "description": "Flag forest",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Flag forest",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "FL_nominal": {
+        "type": "data",
+        "description": "Flag nominal soil",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Flag nominal soil",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "FL_frost": {
+        "type": "data",
+        "description": "Flag frost",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Flag frost",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "FL_ice": {
+        "type": "data",
+        "description": "Flag ice",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Flag ice",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "RFI_Prob": {
+        "type": "data",
+        "description": "RFI Probability",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "RFI Probability",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "X_swath": {
+        "type": "data",
+        "description": "Distance to the center of the swath",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "kilometers",
+        "attrs": {
+          "long_name": "Distance to the center of the swath",
+          "units": "kilometers"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "soil_temperature": {
+        "type": "data",
+        "description": "Soil temperature first layer ECMWF from AUXEC files",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "K",
+        "attrs": {
+          "long_name": "Soil temperature first layer ECMWF from AUXEC files",
+          "units": "K"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "snow_depth": {
+        "type": "data",
+        "description": "Snow depth ECMWF from AUXEC files",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "meters",
+        "attrs": {
+          "long_name": "Snow depth ECMWF from AUXEC files",
+          "units": "meters"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "tau_11d_average": {
+        "type": "data",
+        "description": "VOD 11d Moving Average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "VOD 11d Moving Average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "tau_9_neighbours_average": {
+        "type": "data",
+        "description": "VOD 9 neighbours Moving Average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "VOD 9 neighbours Moving Average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "Diff_tau_tau_11d_average": {
+        "type": "data",
+        "description": "Difference between VOD and VOD temporal average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Difference between VOD and VOD temporal average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "Diff_tau_tau_9_neighbours_average": {
+        "type": "data",
+        "description": "Difference between VOD and VOD spatial average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Difference between VOD and VOD spatial average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "std_tau_tau_11d_average": {
+        "type": "data",
+        "description": "Standard deviation of VOD values use for the temporal average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Standard deviation of VOD values use for the temporal average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      },
+      "std_tau_tau_9_neighbours_average": {
+        "type": "data",
+        "description": "Standard deviation of VOD values use for the spatial average",
+        "dimensions": [
+          "nobs"
+        ],
+        "unit": "-",
+        "attrs": {
+          "long_name": "Standard deviation of VOD values use for the spatial average",
+          "units": "-"
+        },
+        "shape": [
+          9541286
+        ]
+      }
+    },
+    "datetime": null,
+    "license": "Utilisation of this data is subject to ESA's Earth Observation Terms and Conditions: https://earth.esa.int/eogateway/documents/20142/1564626/Terms-and-Conditions-for-the-use-of-ESA-Data.pdf"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./tccas-sodankylae/smosL2_1D_v700_sodankyla_trans.nc",
+      "type": "application/x-netcdf",
+      "title": "Soil moisture and Vegetation Optical Depth (SMOS SM and SMOS L-VOD)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}

@@ -1,0 +1,102 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "tccas-sodankylae-model_forcing",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          32.0,
+          65.0
+        ],
+        [
+          32.0,
+          69.0
+        ],
+        [
+          18.0,
+          69.0
+        ],
+        [
+          18.0,
+          65.0
+        ],
+        [
+          32.0,
+          65.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.0,
+    65.0,
+    32.0,
+    69.0
+  ],
+  "properties": {
+    "license": "CC-BY-4.0",
+    "description": " Regional and Site-level model forcing Data Sets for Sodankyl\u00e4 and Lapland region, part of the TCCAS project.",
+    "datetime": "2012-07-01T11:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Terrestrial Carbon Community Assimilation System: Database for Lapland and Sodankyla region"
+    }
+  ],
+  "assets": {
+    "static-site-level": {
+      "href": "./tccas-sodankylae/FI-Sod_staticforcing.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    },
+    "time-dependent (ERA5) - site level": {
+      "href": "./tccas-sodankylae/FI-Sod_dynforcing-era5_20090101-20211231_with-lwdown.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    },
+    "time-dependent (in-situ) - site level": {
+      "href": "./tccas-sodankylae/FI-Sod_dynforcing-insitu_20090101-20211231_with-insitu-lwdown.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    },
+    "static-regional": {
+      "href": "./tccas-sodankylae/sodankyla-region_cgls-pft-crops-redistributed_staticforcing.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    },
+    "time-dependent (ERA5) - regional": {
+      "href": "./tccas-sodankylae/sodankyla-region_dynforcing_era5_2009-2021.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "tccas-sodankylae"
+}
