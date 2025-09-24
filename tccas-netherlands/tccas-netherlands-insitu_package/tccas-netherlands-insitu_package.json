@@ -63,7 +63,7 @@
   ],
   "assets": {
     "Insitu package": {
-      "href": "./tccas-netherlands/lasmajadas-insitu-package.tgz",
+      "href": "./tccas-netherlands/reusel-insitu-package.tgz",
       "type": "application/tar+gzip",
       "roles": [
         "data"
