@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "4datlantic-ohc-ohc_4datlantic",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          24.5,
+          -89.5
+        ],
+        [
+          24.5,
+          89.5
+        ],
+        [
+          -99.5,
+          89.5
+        ],
+        [
+          -99.5,
+          -89.5
+        ],
+        [
+          24.5,
+          -89.5
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -99.5,
+    -89.5,
+    24.5,
+    89.5
+  ],
+  "properties": {
+    "history": "Creation: 2025-02-05",
+    "source": "satellite observation",
+    "comment": "See technical documentation ATBD and EDD, and peer-review article Marti et al, 2022 https://doi.org/10.5194/essd-2021-220 for more information. ",
+    "references": "https://doi.org/10.24400/527896/A01-2022.012",
+    "version": "2.0",
+    "conventions": "CF-1.8",
+    "contact": "robin.fraudeau(at)magellium.fr",
+    "start_datetime": "2002-04-15T00:00:00Z",
+    "end_datetime": "2022-12-16T00:00:00Z",
+    "cube:dimensions": {
+      "time": {
+        "extent": [
+          "2002-04-15T18:07:12.000001Z",
+          "2022-12-16T18:59:59.999998Z"
+        ],
+        "description": "time",
+        "type": "temporal"
+      },
+      "longitude": {
+        "axis": "x",
+        "extent": [
+          -99.5,
+          24.5
+        ],
+        "step": 1.0,
+        "description": "longitude",
+        "type": "spatial"
+      },
+      "latitude": {
+        "axis": "y",
+        "extent": [
+          -89.5,
+          89.5
+        ],
+        "step": 1.0,
+        "description": "latitude",
+        "type": "spatial"
+      }
+    },
+    "cube:variables": {
+      "crs": {
+        "type": "data",
+        "description": "Coordinate Reference System",
+        "dimensions": [],
+        "attrs": {
+          "long_name": "Coordinate Reference System",
+          "grid_mapping": "crs",
+          "grid_mapping_name": "latitude_longitude",
+          "longitude_of_prime_meridian": 0.0,
+          "semi_major_axis": 6378137.0,
+          "inverse_flattening": 298.257223563,
+          "comment": "This is a container variable that describes the grid_mapping used by the data in this file. This variable does not contain any data;only information about the geographic coordinate system."
+        },
+        "shape": []
+      },
+      "cell_surface": {
+        "type": "data",
+        "description": "Informs on the surface of each grid cell",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "unit": "m2",
+        "attrs": {
+          "standard_name": "cell_area",
+          "long_name": "cell surface of the grid",
+          "units": "m2",
+          "description": "Informs on the surface of each grid cell"
+        },
+        "shape": [
+          180,
+          125
+        ]
+      },
+      "ohc": {
+        "type": "data",
+        "description": "ocean heat content",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "J m-2",
+        "attrs": {
+          "standard_name": "sea_water_potential_temperature_expressed_as_heat_content",
+          "units": "J m-2",
+          "unit_long": "joules per square meter",
+          "long_name": "ocean heat content",
+          "comment": "regional ocean heat content from the space geodetic approach - derived from the regional thermosteric sea level change using a regional expansion efficiency of heat coefficients",
+          "actual_range": [
+            -14159462583.173119,
+            138967666293.89273
+          ]
+        },
+        "shape": [
+          249,
+          180,
+          125
+        ]
+      },
+      "ohc_mask": {
+        "type": "data",
+        "description": "ocean_heat_content_mask",
+        "dimensions": [
+          "time"
+        ],
+        "unit": "1",
+        "attrs": {
+          "long_name": "ocean_heat_content_mask",
+          "units": "1",
+          "comment": "mask to apply on OHC data for masking interpolated data ( 1 for observed data and 0 for extrapolated data)"
+        },
+        "shape": [
+          249
+        ]
+      },
+      "ohc_var_covar_matrix_local": {
+        "type": "data",
+        "description": "variance covariance matrix of errors on regional ocean heat content",
+        "dimensions": [
+          "time_covar",
+          "time_covar_2",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "J2 m-4",
+        "attrs": {
+          "units": "J2 m-4",
+          "unit_long": "square joules per meter to the power of 4",
+          "long_name": "variance covariance matrix of errors on regional ocean heat content",
+          "comment": "variance covariance matrix of errors on regional ocean heat content time-series",
+          "actual_range": [
+            -3.90411988493089e+19,
+            4.79409851441767e+19
+          ]
+        },
+        "shape": [
+          21,
+          21,
+          180,
+          125
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Atlantic Ocean heat content change"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Atlantic Ocean heat content change"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Atlantic Ocean heat content change"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "../../../PRR/example_4datlantic/4datlantic-ohc-ohc_4datlantic/4datlantic-ohc/OHC_4DATLANTIC_200204_202212_V2-0.nc",
+      "type": "application/x-netcdf",
+      "title": "OHC 4D Atlantic",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "4datlantic-ohc"
+}

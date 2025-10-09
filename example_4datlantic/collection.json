@@ -1,0 +1,41 @@
+{
+  "type": "Collection",
+  "id": "4datlantic-ohc",
+  "stac_version": "1.1.0",
+  "description": "Given the major role of the Atlantic Ocean in the climate system, it is essential to characterize the temporal and spatial variations of its heat content. The OHC product results from the space geodetic approach also called altimetry-gravimetry approach. This dataset contains variables as 3D grids of ocean heat content anomalies at 1x1 resolution and monthly time step. Error variance-covariance matrices of OHC at regional scale and annual resolution are also provided. See Experimental Dataset Description for details: https://www.aviso.altimetry.fr/fileadmin/documents/data/tools/OHC-EEI/OHCATL-DT-035-MAG_EDD_V2.0.pdf.Version. V2-0 of Dataset published 2022 in Centre National d\u2019Etudes Spatiales. This dataset has been produced within the framework of the 4DAtlantic-Ocean heat content Project funded by ESA.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Atlantic Ocean heat content change"
+    },
+    {
+      "rel": "item",
+      "href": "./4datlantic-ohc-ohc_4datlantic/4datlantic-ohc-ohc_4datlantic.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "Atlantic Ocean heat content change",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -100,
+          -90,
+          25,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2002-04-15T18:07:12Z",
+          "2023-09-01T18:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "Aviso License"
+}
