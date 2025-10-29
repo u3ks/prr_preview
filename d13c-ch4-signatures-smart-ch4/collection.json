@@ -1,0 +1,41 @@
+{
+  "type": "Collection",
+  "id": "d13c-ch4-signatures-smart-ch4",
+  "stac_version": "1.1.0",
+  "description": "This dataset provides monthly gridded \u03b413C(CH\u2084) isotopic signatures (\u2030 vs V-PDB) for five methane emission sectors: Agricultural & Waste (AGW), Fossil Fuel & Geological (FFG), Biomass Burning (BB), Natural non-wetland (NAT), and Wetlands (WET), and their subsequent sub-sectors, at 1\u00b0\u00d71\u00b0 spatial resolution for the period 1998\u20132022. Each sector file contains monthly flux-weighted \u03b413C(CH\u2084) signatures computed from prior CH\u2084 emissions used in the Global Methane Budget inversion protocol (Martinez et al., 2024), EDGARv8 (Crippa et al., 2023), and GFED4s (van Wees et al., 2022). Sub-sector \u03b413C-CH\u2084 source values are derived from recent literature (Lan et al., 2021; Menoud et al., 2022; Oh et al., 2022; Thompson et al., 2018; Etiope et al., 2019; Sansone et al., 2001). The dataset also includes uncertainty components: propagated (\u03c3prop), aggregation (\u03c3agg), and total (\u03c3total), expressed in \u2030 vs V-PDB. Data are suitable for use in atmospheric inversion and isotope modeling frameworks.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Global delta-13C(CH4) Source Signatures"
+    },
+    {
+      "rel": "item",
+      "href": "./d13c-ch4-signatures-smart-ch4-zarr/d13c-ch4-signatures-smart-ch4-zarr.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "title": "Global delta-13C(CH4) Source Signatures",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1998-01-01T00:00:00Z",
+          "2022-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

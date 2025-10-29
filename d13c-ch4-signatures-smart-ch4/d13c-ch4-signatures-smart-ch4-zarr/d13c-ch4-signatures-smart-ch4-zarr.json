@@ -1,0 +1,600 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "d13c-ch4-signatures-smart-ch4-zarr",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "properties": {
+    "title": "d13C(CH4) isotopic signatures",
+    "history": "Sub-sectors aggregated into sectors (flux-weighted). NaN values filled with flux-weighted global mean.",
+    "time_period": "Monthly data from 1998 to 2022",
+    "fluxes_source_for_flux_weighted": "AGRICULTURAL_WASTE, BIOFUELS, BIOMASS, COAL, LANDFILLS, LIVESTOCK, OILGASIND, RICE, WASTE_WATER: EDGARv8 (Crippa et al. 2023), GEOLOGICAL, OCEANIC, TERMITES, WETLAND: Prior fluxes provided with the Global Methane budget inversion protocol (Martinez et al. 2024)",
+    "signature_source": "LIVESTOCK, BIOFUELS, BIOMASS: LAN ET. AL (2021), WASTE_WATER, LANDFILLS, AGRICULTURAL_WASTE, RICE: MENOUD ET AL. (2022), COAL, OILGASIND: LAN ET. AL (2021), MENOUD ET AL. (2022), WETLAND: OH ET AL. (2022), OCEANIC: SANSONE ET AL. (2001), TERMITES: THOMPSON ET AL. (2018), GEOLOGICAL: ETIOPE ET AL. (2019)",
+    "start_datetime": "1998-01-01T00:00:00Z",
+    "end_datetime": "2022-12-31T23:59:59Z",
+    "license": "CC-BY-4.0",
+    "Conventions": "CF-1.9",
+    "references": [
+      "Lan et al. (2021)",
+      "Menoud et al. (2022)",
+      "Oh et al. (2022)",
+      "Thompson et al. (2018)",
+      "Etiope et al. (2019)",
+      "Sansone et al. (2001)",
+      "Crippa et al. (2023)",
+      "Martinez et al. (2024)"
+    ],
+    "cube:dimensions": {
+      "time": {
+        "extent": [
+          "1998-01-01T00:00:00Z",
+          "2022-12-01T00:00:00Z"
+        ],
+        "description": "time",
+        "type": "temporal"
+      },
+      "longitude": {
+        "axis": "x",
+        "extent": [
+          -179.5,
+          179.5
+        ],
+        "step": 1.0,
+        "description": "longitude",
+        "type": "spatial"
+      },
+      "latitude": {
+        "axis": "y",
+        "extent": [
+          -89.5,
+          89.5
+        ],
+        "step": 1.0,
+        "description": "latitude",
+        "type": "spatial"
+      }
+    },
+    "cube:variables": {
+      "sign_d13c_agw": {
+        "type": "data",
+        "description": "Monthly flux-weighted d13C(CH4) isotopic signature for agricultural and waste",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil vs V-PDB",
+        "attrs": {
+          "long_name": "Monthly flux-weighted d13C(CH4) isotopic signature for agricultural and waste",
+          "sigma_agg": 1.7,
+          "sigma_agg_description": "Aggregation uncertainty \u03c3agg (\u2030) representing variability introduced when aggregating sub-sector signatures into sector-level values using flux weights",
+          "sigma_prop_max": 2.8,
+          "sigma_prop_max_description": "Upper bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on literature standard deviations",
+          "sigma_prop_min": 0.5,
+          "sigma_prop_min_description": "Lower bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on Monte Carlo estimates",
+          "sigma_total_max": 3.3,
+          "sigma_total_max_description": "Upper bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_total_min": 1.8,
+          "sigma_total_min_description": "Lower bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_uncertainty_units": "permil vs V-PDB",
+          "units": "permil vs V-PDB"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_bb": {
+        "type": "data",
+        "description": "Monthly flux-weighted d13C(CH4) isotopic signature for biomass burning",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil vs V-PDB",
+        "attrs": {
+          "long_name": "Monthly flux-weighted d13C(CH4) isotopic signature for biomass burning",
+          "sigma_agg": 0.1,
+          "sigma_agg_description": "Aggregation uncertainty \u03c3agg (\u2030) representing variability introduced when aggregating sub-sector signatures into sector-level values using flux weights",
+          "sigma_prop_max": 6.0,
+          "sigma_prop_max_description": "Upper bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on literature standard deviations",
+          "sigma_prop_min": 0.5,
+          "sigma_prop_min_description": "Lower bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on Monte Carlo estimates",
+          "sigma_total_max": 6.0,
+          "sigma_total_max_description": "Upper bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_total_min": 0.5,
+          "sigma_total_min_description": "Lower bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_uncertainty_units": "permil vs V-PDB",
+          "units": "permil vs V-PDB"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_ffg": {
+        "type": "data",
+        "description": "Monthly flux-weighted d13C(CH4) isotopic signature for FF",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil vs V-PDB",
+        "attrs": {
+          "long_name": "Monthly flux-weighted d13C(CH4) isotopic signature for FF",
+          "sigma_agg": 1.0,
+          "sigma_agg_description": "Aggregation uncertainty \u03c3agg (\u2030) representing variability introduced when aggregating sub-sector signatures into sector-level values using flux weights",
+          "sigma_prop_max": 5.2,
+          "sigma_prop_max_description": "Upper bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on literature standard deviations",
+          "sigma_prop_min": 1.1,
+          "sigma_prop_min_description": "Lower bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on Monte Carlo estimates",
+          "sigma_total_max": 5.3,
+          "sigma_total_max_description": "Upper bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_total_min": 1.5,
+          "sigma_total_min_description": "Lower bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_uncertainty_units": "permil vs V-PDB",
+          "units": "permil vs V-PDB"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_nat": {
+        "type": "data",
+        "description": "Monthly flux-weighted d13C(CH4) isotopic signature for natural non-wetland",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil vs V-PDB",
+        "attrs": {
+          "long_name": "Monthly flux-weighted d13C(CH4) isotopic signature for natural non-wetland",
+          "sigma_agg": 0.0,
+          "sigma_agg_description": "Aggregation uncertainty \u03c3agg (\u2030) representing variability introduced when aggregating sub-sector signatures into sector-level values using flux weights",
+          "sigma_prop_max": 5.4,
+          "sigma_prop_max_description": "Upper bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on literature standard deviations",
+          "sigma_prop_min": 2.0,
+          "sigma_prop_min_description": "Lower bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on Monte Carlo estimates",
+          "sigma_total_max": 5.4,
+          "sigma_total_max_description": "Upper bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_total_min": 2.0,
+          "sigma_total_min_description": "Lower bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_uncertainty_units": "permil vs V-PDB",
+          "units": "permil vs V-PDB"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_agricultural_waste": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for agricultural waste",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for agricultural waste",
+          "std_i_lan": 1.7,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 6.6,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_biomassbiofuels": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for biomassbiofuels",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for biomassbiofuels",
+          "std_i_lan": 5.2,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 11.2,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_coal": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for coal",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for coal",
+          "std_i_lan": 3.0,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 10.0,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_geological": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for geological",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for geological",
+          "std_i_lan": 1.5,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 1.6,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_landfills": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for landfills",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for landfills",
+          "std_i_lan": 1.7,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 3.4,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_livestock": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for livestock",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for livestock",
+          "std_i_lan": 0.2,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 5.8,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_oceanic": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for oceanic",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for oceanic",
+          "std_i_lan": 2.8,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 7.6,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_oilandgas": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for oilandgas",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for oilandgas",
+          "std_i_lan": 1.0,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 7.7,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_rice": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for rice",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for rice",
+          "std_i_lan": 1.1,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 4.5,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_termites": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for termites",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for termites",
+          "std_i_lan": 2.8,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 7.6,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_waste_water": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for waste water",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for waste water",
+          "std_i_lan": 1.7,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 3.2,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_sub_sector_wetlands": {
+        "type": "data",
+        "description": "Monthly \u03b413C(CH4) isotopic signature for wetlands",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil",
+        "attrs": {
+          "long_name": "Monthly \u03b413C(CH4) isotopic signature for wetlands",
+          "std_i_lan": 0.4,
+          "std_i_lan_comment": "Uncertainty values derived from 10,000 Monte Carlo simulations at the grid-cell level explicitly propagating measurement and modeling errors through source attribution and mixing processes",
+          "std_i_lan_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Lan et al. (2021)",
+          "std_i_lan_units": "permil",
+          "std_i_menoud": 8.2,
+          "std_i_menoud_comment": "Standard deviations of \u03b413C-CH4 values reported in the literature capturing spatial variability and methodological dispersion",
+          "std_i_menoud_long_name": "Isotopic uncertainty \u03c3i for each sub-sector from Menoud et al. (2022)",
+          "std_i_menoud_units": "permil",
+          "units": "permil"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      },
+      "sign_d13c_wet": {
+        "type": "data",
+        "description": "Monthly flux-weighted d13C(CH4) isotopic signature for wetlands",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "unit": "permil vs V-PDB",
+        "attrs": {
+          "long_name": "Monthly flux-weighted d13C(CH4) isotopic signature for wetlands",
+          "sigma_agg": 0.0,
+          "sigma_agg_description": "Aggregation uncertainty \u03c3agg (\u2030) representing variability introduced when aggregating sub-sector signatures into sector-level values using flux weights",
+          "sigma_prop_max": 8.2,
+          "sigma_prop_max_description": "Upper bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on literature standard deviations",
+          "sigma_prop_min": 0.4,
+          "sigma_prop_min_description": "Lower bound of propagated uncertainty \u03c3prop from sub-sector isotopic composition (\u2030) based on Monte Carlo estimates",
+          "sigma_total_max": 8.2,
+          "sigma_total_max_description": "Upper bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_total_min": 0.4,
+          "sigma_total_min_description": "Lower bound of total uncertainty \u03c3total (\u2030) computed as sqrt(\u03c3prop^2 + \u03c3agg^2)",
+          "sigma_uncertainty_units": "permil vs V-PDB",
+          "units": "permil vs V-PDB"
+        },
+        "shape": [
+          300,
+          180,
+          360
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global delta-13C(CH4) Source Signatures"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global delta-13C(CH4) Source Signatures"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global delta-13C(CH4) Source Signatures"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./d13c-ch4-signatures-smart-ch4/ds.zarr",
+      "type": "application/vnd+zarr",
+      "title": "Zarr Store of d13C(CH4) signatures",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "d13c-ch4-signatures-smart-ch4"
+}
