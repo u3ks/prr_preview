@@ -588,7 +588,7 @@
   ],
   "assets": {
     "data": {
-      "href": "./d13c-ch4-signatures-smart-ch4/ds.zarr",
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/smart-ch4/smart_ch4_d13c.zarr",
       "type": "application/vnd+zarr",
       "title": "Zarr Store of d13C(CH4) signatures",
       "roles": [
