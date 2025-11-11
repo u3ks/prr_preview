@@ -37,8 +37,8 @@
     69.0
   ],
   "properties": {
-    "license": "CC-BY-4.0",
-    "description": " Regional and Site-level model forcing Data Sets for Sodankyl\u00e4 and Lapland region, part of the TCCAS project.",
+    "license": "AGPL-3.0",
+    "description": " Regional and Site-level model forcing Data Sets, part of the TCCAS project.",
     "datetime": "2021-12-31T00:00:00Z"
   },
   "links": [

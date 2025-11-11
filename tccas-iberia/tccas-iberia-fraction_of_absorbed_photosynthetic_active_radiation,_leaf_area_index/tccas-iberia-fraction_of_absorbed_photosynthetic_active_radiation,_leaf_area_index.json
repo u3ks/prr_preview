@@ -47,11 +47,27 @@
     "cube:dimensions": {
       "time": {
         "extent": [
-          "2011-01-01T00:00:00Z",
-          "2021-12-26T00:00:00Z"
+          1293840000000000000,
+          1640476800000000000
         ],
         "description": "time",
-        "type": "temporal"
+        "type": "auxiliary"
+      },
+      "lon": {
+        "extent": [
+          -8.495,
+          -2.505
+        ],
+        "description": "longitude",
+        "type": "auxiliary"
+      },
+      "lat": {
+        "extent": [
+          38.505,
+          42.995
+        ],
+        "description": "latitude",
+        "type": "auxiliary"
       }
     },
     "cube:variables": {

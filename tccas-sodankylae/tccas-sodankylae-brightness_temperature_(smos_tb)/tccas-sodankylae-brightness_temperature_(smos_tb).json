@@ -44,7 +44,32 @@
     "start_datetime": "2010-01-13T00:00:00Z",
     "end_datetime": "2010-01-13T00:00:00Z",
     "region": "sodankylae",
-    "cube:dimensions": {},
+    "cube:dimensions": {
+      "npts": {
+        "extent": [
+          9.969209968386869e+36,
+          9.969209968386869e+36
+        ],
+        "step": 0.0,
+        "type": "auxiliary"
+      },
+      "nbin": {
+        "extent": [
+          9.969209968386869e+36,
+          9.969209968386869e+36
+        ],
+        "step": 0.0,
+        "type": "auxiliary"
+      },
+      "ntime": {
+        "extent": [
+          9.969209968386869e+36,
+          9.969209968386869e+36
+        ],
+        "step": 0.0,
+        "type": "auxiliary"
+      }
+    },
     "cube:variables": {
       "lat": {
         "type": "data",
