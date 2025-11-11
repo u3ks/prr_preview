@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "YIPEEO-CROPYIELDS",
+  "stac_version": "1.1.0",
+  "description": "This dataset contains the processed Sentinel 1 and Sentinel 2 features used for yield rediction  in the Yield Prediction and Estimation from Earth Observation (YIPEEO) project. Sentinel-2 L2A collection is used to compute a set of features based on the provided bands as well as various vegetation indices. Sentinel-1 data for the years 2016-2023 was pre-processed by TUW RS on the Vienna Scientific Cluster using the software SNAP8 and software packages developed by the TUW RS group.",
+  "links": [
+    {
+      "rel": "items",
+      "href": "https://eoresults.esa.int/stac/collections/YIPEEO-CROPYIELDS/items",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../open-science-catalog-metadata/catalog.json",
+      "type": "application/json",
+      "title": "Open Science Catalog"
+    },
+    {
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+      "href": "https://eoresults.esa.int/stac/collections/YIPEEO-CROPYIELDS/queryables",
+      "type": "application/schema+json",
+      "title": "Queryables"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Yield Data Sentinel-1 & Sentinel-2 Features"
+    }
+  ],
+  "title": "Crop Yield Prediction and Estimation, and Features from Sentinel1 and Sentinel2 data",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          4.844270319251073,
+          49.040729923617775,
+          31.01967739451807,
+          52.869947524440924
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "various"
+}

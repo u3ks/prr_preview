@@ -1,0 +1,157 @@
+{
+  "type": "Collection",
+  "id": "antarctic-ice-shelf-calving-fronts",
+  "stac_version": "1.1.0",
+  "description": "Antarctic Coastlines, 1997-2021. Time-evolving Antarctic calving fronts from observations. Greene, Chad A., Gardner, Alex S., Schlegel, Nicole-Jeanne, & Fraser, Alexander D. (2022). ",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../open-science-catalog-metadata/catalog.json",
+      "type": "application/json",
+      "title": "Open Science Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./antarctic-coastlines-v2/catalog.json",
+      "type": "application/json",
+      "title": "Items"
+    },
+    {
+      "rel": "via",
+      "href": "https://zenodo.org/record/5903643",
+      "title": "Access"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.nature.com/articles/s41586-022-05037-w",
+      "title": "Documentation"
+    },
+    {
+      "rel": "related",
+      "href": "../../projects/polar-ice-shelf/collection.json",
+      "type": "application/json",
+      "title": "Project: Polar+ Ice Shelves"
+    },
+    {
+      "rel": "related",
+      "href": "../../themes/cryosphere/catalog.json",
+      "type": "application/json",
+      "title": "Theme: Cryosphere"
+    },
+    {
+      "rel": "related",
+      "href": "../../variables/ice-extent/catalog.json",
+      "type": "application/json",
+      "title": "Variable: Ice Extent"
+    },
+    {
+      "rel": "parent",
+      "href": "../../../open-science-catalog-metadata/products/catalog.json",
+      "type": "application/json",
+      "title": "Products"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/osc/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/themes/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/cf/v0.2.0/schema.json"
+  ],
+  "osc:project": "polar-ice-shelf",
+  "osc:status": "ongoing",
+  "osc:region": "Antarctica",
+  "osc:type": "product",
+  "created": "2023-01-25T00:00:00Z",
+  "cf:parameter": [
+    {
+      "name": "antarctic_ice_shelf_calving_fronts"
+    }
+  ],
+  "themes": [
+    {
+      "scheme": "https://github.com/stac-extensions/osc#theme",
+      "concepts": [
+        {
+          "id": "cryosphere"
+        }
+      ]
+    }
+  ],
+  "osc:variables": [
+    "ice-extent"
+  ],
+  "osc:missions": [],
+  "updated": "2024-09-12T20:32:22.973110Z",
+  "access": {
+    "access:product": {
+      "url_resolves": {
+        "value": true,
+        "description": "Test whether the dataset URL resolves successfully."
+      },
+      "has_doi": {
+        "value": false,
+        "description": "Test whether the the dataset has an associated DOI."
+      },
+      "has_documentation": {
+        "value": true,
+        "description": "Test whether the the dataset has documentation ."
+      },
+      "approved_metadata_domain": {
+        "value": true,
+        "description": "Test whether the metadata is hosted on an approved domain."
+      },
+      "approved_data_domain": {
+        "value": true,
+        "description": "Test whether the data is hosted on an approved domain."
+      }
+    },
+    "access:file": {
+      "file_access": {
+        "value": true,
+        "description": "Test whether the metadata has per-file metadata, or if the data is a raw dump."
+      },
+      "acessible_files_rate": {
+        "value": true,
+        "description": "Percent of assets that could be opened in tests."
+      },
+      "cloud_assets_rate": {
+        "value": true,
+        "description": "Percent of assets that are in cloud-optimised format."
+      }
+    },
+    "access:workflow": {
+      "has_workflow": {
+        "value": false,
+        "description": "Dataset has associated workflow."
+      }
+    }
+  },
+  "title": "Antarctic Ice Shelf Calving Fronts 1997-2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -83.0,
+          180.0,
+          -60.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-01-01T00:00:00Z",
+          "2023-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "keywords": [
+    "Glaciers/Ice Sheets",
+    "Sea Ice",
+    "Ice Shelf",
+    "Ice Extent",
+    "Cryospheric Indicators"
+  ]
+}
