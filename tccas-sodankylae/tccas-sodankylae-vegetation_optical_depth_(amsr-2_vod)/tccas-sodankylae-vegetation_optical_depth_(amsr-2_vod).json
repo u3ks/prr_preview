@@ -47,42 +47,28 @@
     "cube:dimensions": {
       "time": {
         "extent": [
-          1341136800000000000,
-          1640908800000000000
+          "2012-07-01T10:00:00Z",
+          "2021-12-31T00:00:00Z"
         ],
-        "type": "auxiliary"
-      },
-      "lat": {
-        "extent": [
-          65.125,
-          68.875
-        ],
-        "step": -0.25,
-        "type": "auxiliary"
+        "type": "temporal"
       },
       "lon": {
+        "axis": "x",
         "extent": [
           18.125,
           31.875
         ],
         "step": 0.25,
-        "type": "auxiliary"
+        "type": "spatial"
       },
-      "nv": {
+      "lat": {
+        "axis": "y",
         "extent": [
-          0,
-          3
+          65.125,
+          68.875
         ],
-        "step": 1,
-        "type": "auxiliary"
-      },
-      "ntc": {
-        "extent": [
-          0,
-          3
-        ],
-        "step": 1,
-        "type": "auxiliary"
+        "step": -0.25,
+        "type": "spatial"
       }
     },
     "cube:variables": {
