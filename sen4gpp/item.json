@@ -1,0 +1,91 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "h20v04_2020-01-01",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          46.671714797259284,
+          39.999999996410885
+        ],
+        [
+          46.671714797259284,
+          49.999999995506855
+        ],
+        [
+          26.10814578292475,
+          49.999999995506855
+        ],
+        [
+          26.10814578292475,
+          39.999999996410885
+        ],
+        [
+          46.671714797259284,
+          39.999999996410885
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    26.10814578292475,
+    39.999999996410885,
+    46.671714797259284,
+    49.999999995506855
+  ],
+  "properties": {
+    "title": "Tile - h20v04 - 2020-01-01 00:00:00 - 2020-01-08 00:00:00",
+    "tile_id": "h20v04",
+    "description": "GPP data generated for composite period 2020-01-01 00:00:00 - 2020-01-08 00:00:00 and MODIS tile h20v04.",
+    "start_datetime": "2020-01-01T00:00:00Z",
+    "end_datetime": "2020-01-08T00:00:00Z",
+    "datetime": null
+  },
+  "links": [],
+  "assets": {
+    "geotiff": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/sen4gpp/2020-01-01/QISCARF_GPP_20200101_h20v04_m0.tif",
+      "type": "image/tiff; application=geotiff",
+      "raster:bands": [
+        {
+          "name": "Band1",
+          "description": "Gross Primary Productivity in average gC/m\u00b2/day",
+          "unit": "gC/m\u00b2/day",
+          "nodata": "nan",
+          "data_type": "float16",
+          "spatial_resolution": 463.32,
+          "sampling": "area"
+        },
+        {
+          "name": "Band2",
+          "description": "Quality flags indicating data source and quality information",
+          "unit": "1",
+          "nodata": "nan",
+          "data_type": "float16",
+          "spatial_resolution": 463.32,
+          "sampling": "area"
+        }
+      ],
+      "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "proj:bbox": [
+        2223901.039333,
+        4447802.078667001,
+        3335851.559,
+        5559752.598333
+      ],
+      "proj:shape": [
+        2400,
+        2400
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}
