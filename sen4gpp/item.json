@@ -54,7 +54,7 @@
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
-          "name": "Band1",
+          "name": "1",
           "description": "Gross Primary Productivity in average gC/m\u00b2/day",
           "unit": "gC/m\u00b2/day",
           "nodata": "nan",
@@ -63,7 +63,7 @@
           "sampling": "area"
         },
         {
-          "name": "Band2",
+          "name": "2",
           "description": "Quality flags indicating data source and quality information",
           "unit": "1",
           "nodata": "nan",
