@@ -59,7 +59,7 @@
           "description": "Gross Primary Productivity in average gC/m\u00b2/day",
           "unit": "gC/m\u00b2/day",
           "nodata": "nan",
-          "data_type": "float16",
+          "data_type": "float32",
           "spatial_resolution": 463.32,
           "sampling": "area"
         },
@@ -68,7 +68,7 @@
           "description": "Quality flags indicating data source and quality information",
           "unit": "1",
           "nodata": "nan",
-          "data_type": "float16",
+          "data_type": "float32",
           "spatial_resolution": 463.32,
           "sampling": "area"
         }
