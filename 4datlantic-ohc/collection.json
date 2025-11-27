@@ -12,7 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./4datlantic-ohc-ohc_4datlantic/4datlantic-ohc-ohc_4datlantic.json",
+      "href": "./4datlantic-ohc-global/4datlantic-ohc-global.json",
       "type": "application/geo+json"
     }
   ],
