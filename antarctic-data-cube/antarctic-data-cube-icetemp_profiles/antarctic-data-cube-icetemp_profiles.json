@@ -37,8 +37,8 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:17:29.450352+00:00",
-    "end_datetime": "2026-01-15 18:17:29.450363+00:00",
+    "start_datetime": "2026-01-15 18:18:33.655467+00:00",
+    "end_datetime": "2026-01-15 18:18:33.655479+00:00",
     "description": "Data cube with Ice Temperature Profiles from ESA science Activities",
     "title": "Ice Temperature Data Cube",
     "license": "other",

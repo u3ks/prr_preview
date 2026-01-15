@@ -37,8 +37,8 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:17:29.233677+00:00",
-    "end_datetime": "2026-01-15 18:17:29.233692+00:00",
+    "start_datetime": "2026-01-15 18:18:33.415917+00:00",
+    "end_datetime": "2026-01-15 18:18:33.415932+00:00",
     "description": "Data cube with Bedrock topography, Ice shelf Basal Melt, Groundlines, Subglacial Lakes and Supraglacial Lakes data for the Antarctica Region",
     "title": "Bedrock topography, Ice shelf Basal Melt, Groundlines, Subglacial Lakes and Supraglacial Lakes DataCube",
     "license": "other",
