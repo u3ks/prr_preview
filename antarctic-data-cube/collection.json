@@ -27,11 +27,6 @@
     },
     {
       "rel": "item",
-      "href": "./antarctic-data-cube-'sec'/antarctic-data-cube-'sec'.json",
-      "type": "application/geo+json"
-    },
-    {
-      "rel": "item",
       "href": "./antarctic-data-cube-sec/antarctic-data-cube-sec.json",
       "type": "application/geo+json"
     }
