@@ -39,7 +39,7 @@
     -60.0
   ],
   "properties": {
-    "datetime": "2026-01-15T17:38:55.206605Z",
+    "datetime": "2026-01-15T17:44:19.808648Z",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -191,7 +191,7 @@
     "data": {
       "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/icetemp.zarr",
       "type": "application/x-netcdf",
-      "title": "Ice Temperature Data Cube",
+      "title": "Ice Velocity Data Cube",
       "roles": [
         "data"
       ]
