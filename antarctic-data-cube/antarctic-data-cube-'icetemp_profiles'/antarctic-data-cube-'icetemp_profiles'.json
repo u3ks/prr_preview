@@ -1,0 +1,201 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+  ],
+  "id": "antarctic-data-cube-'icetemp_profiles'",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    -60.0
+  ],
+  "properties": {
+    "datetime": "2026-01-15T17:32:02.125814Z",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -2867900.0,
+          2867800.0
+        ],
+        "step": 100.0,
+        "description": "x coordinate of projection",
+        "reference_system": "spatial_ref",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -2457900.0,
+          2457800.0
+        ],
+        "step": 100.0,
+        "description": "y coordinate of projection",
+        "reference_system": "spatial_ref",
+        "type": "spatial"
+      }
+    },
+    "cube:variables": {
+      "englacial_temp_profile_quality_flag": {
+        "type": "data",
+        "description": "https://doi.org/10.1016/j.rse.2019.111405",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "unit": "N/A",
+        "attrs": {
+          "standard_name": "englacial_temp_profile_quality_flag",
+          "long_name": "Quality flag of englacial temperature profile",
+          "description": "https://doi.org/10.1016/j.rse.2019.111405",
+          "units": "N/A",
+          "valid_range": [
+            0,
+            3
+          ],
+          "fill_values": NaN,
+          "grid_mapping": "spatial_ref",
+          "source": "https://opensciencedata.esa.int/stac-browser/#/products/ice-temperature-profiles-antarctica/collection.json",
+          "reference": "https://doi.org/10.1016/j.rse.2019.111405",
+          "processing_steps": "Nearest-neighbour interpolated from non-regular 2D grid",
+          "original_cell_size": "25000m",
+          "file_type": "area",
+          "flag_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "flag_meanings": "low_balance_velocity_low_CF low_balance_velocity_high_CF high_balance_velocity_low_CF high_balance_velocity_high_CF",
+          "is_mask": true
+        },
+        "shape": [
+          49158,
+          57358
+        ],
+        "chunks": [
+          4915,
+          5735
+        ]
+      },
+      "englacial_temp_profile_tice": {
+        "type": "data",
+        "description": "Vertical temperature profile of the ice sheet estimated from SMOS observations in the Antarctic Plateau. Quality flag of the retrieved ice temperature (0 for low balance velocity and low cost function (CF), 1 for low balance velocity and high CF, 2 for high balance velocity and low CF, 3 for high balance velocity and high CF). More details can be found in the paper mentioned in source",
+        "dimensions": [
+          "depth",
+          "y",
+          "x"
+        ],
+        "unit": "K",
+        "attrs": {
+          "standard_name": "englacial_temperature_profile_tice",
+          "long_name": "Ice sheet temperature profile maps",
+          "description": "Vertical temperature profile of the ice sheet estimated from SMOS observations in the Antarctic Plateau. Quality flag of the retrieved ice temperature (0 for low balance velocity and low cost function (CF), 1 for low balance velocity and high CF, 2 for high balance velocity and low CF, 3 for high balance velocity and high CF). More details can be found in the paper mentioned in source",
+          "units": "K",
+          "valid_range": "N/A",
+          "fill_values": NaN,
+          "grid_mapping": "spatial_ref",
+          "source": "https://opensciencedata.esa.int/stac-browser/#/products/ice-temperature-profiles-antarctica/collection.json",
+          "reference": "https://doi.org/10.1016/j.rse.2019.111405",
+          "processing_steps": "Nearest-neighbour interpolated from non-regular 2D grid",
+          "original_cell_size": "25000m",
+          "file_type": "area"
+        },
+        "shape": [
+          91,
+          49158,
+          57358
+        ],
+        "chunks": [
+          1,
+          4915,
+          5735
+        ]
+      },
+      "spatial_ref": {
+        "type": "auxiliary",
+        "dimensions": [],
+        "attrs": {
+          "crs_wkt": "PROJCS[\"WGS 84 / Antarctic Polar Stereographic\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-71],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3031\"]]",
+          "semi_major_axis": 6378137.0,
+          "semi_minor_axis": 6356752.314245179,
+          "inverse_flattening": 298.257223563,
+          "reference_ellipsoid_name": "WGS 84",
+          "longitude_of_prime_meridian": 0.0,
+          "prime_meridian_name": "Greenwich",
+          "geographic_crs_name": "WGS 84",
+          "horizontal_datum_name": "World Geodetic System 1984",
+          "projected_crs_name": "WGS 84 / Antarctic Polar Stereographic",
+          "grid_mapping_name": "polar_stereographic",
+          "standard_parallel": -71.0,
+          "straight_vertical_longitude_from_pole": 0.0,
+          "false_easting": 0.0,
+          "false_northing": 0.0,
+          "spatial_ref": "PROJCS[\"WGS 84 / Antarctic Polar Stereographic\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-71],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3031\"]]",
+          "GeoTransform": "-3060277.25 1000.0 0.0 3217259.75 0.0 -1000.0"
+        },
+        "shape": []
+      }
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Ocean heat content change"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Ocean heat content change"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Ocean heat content change"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/icetemp.zarr",
+      "type": "application/x-netcdf",
+      "title": "Ice Temperature Data Cube",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "antarctic-data-cube"
+}
