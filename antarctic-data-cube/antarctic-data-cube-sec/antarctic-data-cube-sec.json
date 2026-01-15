@@ -39,7 +39,11 @@
     -60.0
   ],
   "properties": {
-    "datetime": "2026-01-15T18:01:18.806887Z",
+    "start_datetime": "2026-01-15 18:07:05.699613+00:00",
+    "end_datetime": "2026-01-15 18:07:05.699624+00:00",
+    "description": "Data cube with Ice Surface elevation change from ESA Polar Science Activities",
+    "title": "Surface elevation change Data Cube",
+    "license": "other",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -366,7 +370,8 @@
           5735
         ]
       }
-    }
+    },
+    "datetime": null
   },
   "links": [
     {
