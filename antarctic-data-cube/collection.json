@@ -12,22 +12,27 @@
     },
     {
       "rel": "item",
-      "href": "./antarctic-data-cube-'antarctica_combined'/antarctic-data-cube-'antarctica_combined'.json",
+      "href": "./antarctic-data-cube-antarctica_combined/antarctic-data-cube-antarctica_combined.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./antarctic-data-cube-'icetemp_profiles'/antarctic-data-cube-'icetemp_profiles'.json",
+      "href": "./antarctic-data-cube-icetemp_profiles/antarctic-data-cube-icetemp_profiles.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./antarctic-data-cube-'icetemp_profiles'/antarctic-data-cube-'icetemp_profiles'.json",
+      "href": "./antarctic-data-cube-icevel/antarctic-data-cube-icevel.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./antarctic-data-cube-'sec'/antarctic-data-cube-'sec'.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./antarctic-data-cube-sec/antarctic-data-cube-sec.json",
       "type": "application/geo+json"
     }
   ],

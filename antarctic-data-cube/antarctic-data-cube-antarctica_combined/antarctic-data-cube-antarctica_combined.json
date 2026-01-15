@@ -4,7 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
   ],
-  "id": "antarctic-data-cube-'antarctica_combined'",
+  "id": "antarctic-data-cube-antarctica_combined",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -39,7 +39,7 @@
     -60.0
   ],
   "properties": {
-    "datetime": "2026-01-15T17:32:00.613894Z",
+    "datetime": "2026-01-15T17:35:14.891612Z",
     "cube:dimensions": {
       "x": {
         "axis": "x",
