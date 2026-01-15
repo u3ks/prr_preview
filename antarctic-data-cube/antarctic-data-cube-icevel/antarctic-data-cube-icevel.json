@@ -39,7 +39,7 @@
     -60.0
   ],
   "properties": {
-    "datetime": "2026-01-15T17:37:28.179444Z",
+    "datetime": "2026-01-15T17:38:55.206605Z",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -172,19 +172,19 @@
       "rel": "root",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Ocean heat content change"
+      "title": "Antarctic Data Cube"
     },
     {
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Ocean heat content change"
+      "title": "Antarctic Data Cube"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Ocean heat content change"
+      "title": "Antarctic Data Cube"
     }
   ],
   "assets": {

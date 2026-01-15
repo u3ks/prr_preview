@@ -2,13 +2,13 @@
   "type": "Collection",
   "id": "antarctic-data-cube",
   "stac_version": "1.0.0",
-  "description": "Given the major role of the ocean in the climate system, it is essential to characterize the temporal and spatial variations of its heat content. The OHC product results from the space geodetic approach also called altimetry-gravimetry approach. This dataset contains variables as 3D grids of ocean heat content anomalies at 1x1 resolution and monthly time step. Error variance-covariance matrices of OHC at regional scale and annual resolution are also provided. See Experimental Dataset Description for details: https://www.aviso.altimetry.fr/fileadmin/documents/data/tools/OHC-EEI/OHCATL-DT-035-MAG_EDD_V3.0.pdf. Version V3-0 of Dataset published 2025 in ODATIS-AVISO portal. This dataset has been produced within the framework of the 4DAtlantic-Ocean heat content Project funded by ESA.",
+  "description": "ESA's Polar Science Cluster science activities aim to improve the understanding of Polar regions through advanced satellite Earth observation and scientific investigation. As part of work, there are multiple datasets generated for scientific exploitation. This project aims to combine and preprocess these datasets in order to make them more accessible and useful.",
   "links": [
     {
       "rel": "root",
       "href": "./collection.json",
       "type": "application/json",
-      "title": "Ocean heat content change"
+      "title": "Antarctic Data Cube"
     },
     {
       "rel": "item",
@@ -31,7 +31,7 @@
       "type": "application/geo+json"
     }
   ],
-  "title": "Ocean heat content change",
+  "title": "Antarctic Data Cube",
   "extent": {
     "spatial": {
       "bbox": [
@@ -52,5 +52,5 @@
       ]
     }
   },
-  "license": "various"
+  "license": "other"
 }
