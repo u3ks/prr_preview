@@ -37,8 +37,8 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:14:05.666974+00:00",
-    "end_datetime": "2026-01-15 18:14:05.666996+00:00",
+    "start_datetime": "2026-01-15 18:17:29.233677+00:00",
+    "end_datetime": "2026-01-15 18:17:29.233692+00:00",
     "description": "Data cube with Bedrock topography, Ice shelf Basal Melt, Groundlines, Subglacial Lakes and Supraglacial Lakes data for the Antarctica Region",
     "title": "Bedrock topography, Ice shelf Basal Melt, Groundlines, Subglacial Lakes and Supraglacial Lakes DataCube",
     "license": "other",
@@ -67,7 +67,7 @@
   "assets": {
     "data": {
       "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/antarctica-combined.zarr",
-      "type": "application/x-netcdf",
+      "type": "application/vnd+zarr",
       "title": "Bedrock topography, Ice shelf Basal Melt, Groundlines, Subglacial Lakes and Supraglacial Lakes DataCube",
       "roles": [
         "data"

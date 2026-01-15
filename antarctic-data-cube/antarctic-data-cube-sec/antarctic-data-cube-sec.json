@@ -37,8 +37,8 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:14:07.321795+00:00",
-    "end_datetime": "2026-01-15 18:14:07.321806+00:00",
+    "start_datetime": "2026-01-15 18:17:29.890747+00:00",
+    "end_datetime": "2026-01-15 18:17:29.890759+00:00",
     "description": "Data cube with Ice Surface elevation change from ESA Polar Science Activities",
     "title": "Surface elevation change Data Cube",
     "license": "other",
@@ -67,7 +67,7 @@
   "assets": {
     "data": {
       "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/sec.zarr",
-      "type": "application/x-netcdf",
+      "type": "application/vnd+zarr",
       "title": "Surface elevation change Data Cube",
       "roles": [
         "data"
