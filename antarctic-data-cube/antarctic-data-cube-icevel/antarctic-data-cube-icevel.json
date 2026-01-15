@@ -39,35 +39,12 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:07:05.450044+00:00",
-    "end_datetime": "2026-01-15 18:07:05.450056+00:00",
+    "start_datetime": "2026-01-15 18:10:42.660898+00:00",
+    "end_datetime": "2026-01-15 18:10:42.660909+00:00",
     "description": "Data cube with Ice Velocity from ESA Polar Science Activities",
     "title": "Ice Velocity Data Cube",
     "license": "other",
-    "cube:dimensions": {
-      "x": {
-        "axis": "x",
-        "extent": [
-          -2867900.0,
-          2867800.0
-        ],
-        "step": 100.0,
-        "description": "x coordinate of projection",
-        "reference_system": "spatial_ref",
-        "type": "spatial"
-      },
-      "y": {
-        "axis": "y",
-        "extent": [
-          -2457900.0,
-          2457800.0
-        ],
-        "step": 100.0,
-        "description": "y coordinate of projection",
-        "reference_system": "spatial_ref",
-        "type": "spatial"
-      }
-    },
+    "cube:dimensions": {},
     "cube:variables": {
       "englacial_temp_profile_quality_flag": {
         "type": "data",

@@ -39,35 +39,12 @@
     -60.0
   ],
   "properties": {
-    "start_datetime": "2026-01-15 18:07:05.699613+00:00",
-    "end_datetime": "2026-01-15 18:07:05.699624+00:00",
+    "start_datetime": "2026-01-15 18:10:42.889323+00:00",
+    "end_datetime": "2026-01-15 18:10:42.889336+00:00",
     "description": "Data cube with Ice Surface elevation change from ESA Polar Science Activities",
     "title": "Surface elevation change Data Cube",
     "license": "other",
-    "cube:dimensions": {
-      "x": {
-        "axis": "x",
-        "extent": [
-          -2867900.0,
-          2867800.0
-        ],
-        "step": 100.0,
-        "description": "Cartesian x-coordinate - easting, of centre of each grid cell",
-        "reference_system": "spatial_ref",
-        "type": "spatial"
-      },
-      "y": {
-        "axis": "y",
-        "extent": [
-          -2457900.0,
-          2457800.0
-        ],
-        "step": 100.0,
-        "description": "Cartesian y-coordinate - northing, of centre of each grid cell",
-        "reference_system": "spatial_ref",
-        "type": "spatial"
-      }
-    },
+    "cube:dimensions": {},
     "cube:variables": {
       "surface_elevation_change_basin_id": {
         "type": "data",
