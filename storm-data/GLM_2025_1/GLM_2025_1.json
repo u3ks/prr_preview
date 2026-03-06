@@ -1,0 +1,117 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "GLM_2025_1",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          175.73959350585938,
+          -54.69968032836914
+        ],
+        [
+          175.73959350585938,
+          54.52340316772461
+        ],
+        [
+          -175.2191619873047,
+          54.52340316772461
+        ],
+        [
+          -175.2191619873047,
+          -54.69968032836914
+        ],
+        [
+          175.73959350585938,
+          -54.69968032836914
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -175.2191619873047,
+    -54.69968032836914,
+    175.73959350585938,
+    54.52340316772461
+  ],
+  "properties": {
+    "parquet:columns": {
+      "group_id": {
+        "long_name": "Group ID",
+        "units": "1"
+      },
+      "group_time": {
+        "long_name": "Time of lightning group",
+        "standard_name": "time"
+      },
+      "latitude": {
+        "long_name": "Latitude of group",
+        "units": "degrees_north",
+        "standard_name": "latitude"
+      },
+      "longitude": {
+        "long_name": "Longitude of group",
+        "units": "degrees_east",
+        "standard_name": "longitude"
+      },
+      "radiance": {
+        "long_name": "Radiance of group",
+        "units": "mW.m-2.sr-1"
+      },
+      "flash_id": {
+        "long_name": "Parent flash ID",
+        "units": "1"
+      },
+      "ec_time_diff": {
+        "long_name": "Time difference from EarthCARE overpass"
+      },
+      "parent_cluster_id": {
+        "long_name": "Parent cluster ID",
+        "description": "DBSCAN clustering (eps=5.0, time_weight=0.5, min_samples=20); -1 = noise"
+      },
+      "cluster_id": {
+        "long_name": "Cluster ID within parent clusters",
+        "description": "DBSCAN clustering (eps=5.0, time_weight=0.5, min_samples=20); -1 = noise"
+      },
+      "distance_from_nadir": {
+        "long_name": "Distance to closest EarthCARE CPR track point",
+        "units": "km"
+      }
+    },
+    "source": "GLM",
+    "type": "Lightning Strikes",
+    "datetime": "2026-03-05T17:53:18.662281Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/storm-data/GLM_2025_1.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lightning-clusters"
+}

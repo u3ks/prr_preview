@@ -1,0 +1,240 @@
+{
+  "type": "Collection",
+  "id": "lightning-clusters",
+  "stac_version": "1.1.0",
+  "description": "GOES-GLM to EarthCARE collocated data",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2024_8/LI_2024_8.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2024_9/LI_2024_9.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2024_10/LI_2024_10.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2024_11/LI_2024_11.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2024_12/LI_2024_12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_1/LI_2025_1.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_2/LI_2025_2.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_3/LI_2025_3.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_4/LI_2025_4.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_5/LI_2025_5.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_6/LI_2025_6.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_7/LI_2025_7.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_8/LI_2025_8.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_9/LI_2025_9.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_10/LI_2025_10.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_11/LI_2025_11.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2025_12/LI_2025_12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_2026_1/LI_2026_1.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2024_8/GLM_2024_8.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2024_9/GLM_2024_9.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2024_10/GLM_2024_10.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2024_11/GLM_2024_11.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2024_12/GLM_2024_12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_1/GLM_2025_1.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_2/GLM_2025_2.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_3/GLM_2025_3.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_4/GLM_2025_4.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_5/GLM_2025_5.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_6/GLM_2025_6.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_7/GLM_2025_7.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_8/GLM_2025_8.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_9/GLM_2025_9.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_10/GLM_2025_10.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_11/GLM_2025_11.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2025_12/GLM_2025_12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_2026_1/GLM_2026_1.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLM_C2/GLM_C2.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./LI_C2/LI_C2.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./gdf_summary/gdf_summary.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./gdf_evolution/gdf_evolution.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "institution": "European Space Agency (ESA)",
+  "history": "Created on 2026-01-28",
+  "source": "EarthCARE MSI/CPR + NOAA GOES Geostationary Lightning Mapper (GLM) L2 LCFA (platform: GOES-16)",
+  "references": "https://www.goes-r.gov/spacesegment/glm.html, https://earth.esa.int/eogateway/missions/earthcare",
+  "title": "EarthCARE Lightning Clusters",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-08-01T00:00:00Z",
+          "2025-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0"
+}

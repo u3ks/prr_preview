@@ -1,0 +1,97 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "gdf_summary",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          177.54605102539062,
+          -55.92535400390625
+        ],
+        [
+          177.54605102539062,
+          59.90574264526367
+        ],
+        [
+          -175.81239318847656,
+          59.90574264526367
+        ],
+        [
+          -175.81239318847656,
+          -55.92535400390625
+        ],
+        [
+          177.54605102539062,
+          -55.92535400390625
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -175.81239318847656,
+    -55.92535400390625,
+    177.54605102539062,
+    59.90574264526367
+  ],
+  "properties": {
+    "parquet:columns": {
+      "unique_id": "Unique identifier of the lightning cluster (orbit_frame + source + cluster_id)",
+      "orbit_frame": "Orbit/frame identifier of the EarthCARE overpass",
+      "source": "Lightning data source: LI (MTG) or GLM (GOES)",
+      "parent_cluster_id": "Parent lightning cluster identifier",
+      "cluster_id": "Lightning cluster identifier",
+      "surface_type": "Surface classification at cluster location (land, water, coast)",
+      "peak_datetime": "Time of CPR sample with maximum lightning activity",
+      "peak_lat": "Latitude of CPR sample with maximum lightning activity",
+      "peak_lon": "Longitude of CPR sample with maximum lightning activity",
+      "peak_lightning": "Maximum lightning group count at a CPR sample",
+      "nadir_lightning": "Lightning group count within \u00b12.5 min and \u00b12.5 km of CPR nadir track",
+      "cluster_lightning": "Lightning group count within \u00b12.5 min of CPR peak time (any distance)",
+      "cluster_area_km2": "Area of cluster in km\u00b2",
+      "cluster_mean_lat": "Mean latitude of lightning groups within \u00b12.5 min of CPR peak time",
+      "cluster_mean_lon": "Mean longitude of lightning groups within \u00b12.5 min of CPR peak time",
+      "cluster_dist_km": "Minimum distance (km) between CPR track and mean cluster location",
+      "first_lightning_min": "Minute offset of first lightning in parent cluster relative to peak_datetime",
+      "last_lightning_min": "Minute offset of last lightning in parent cluster relative to peak_datetime",
+      "duration_min": "Parent cluster duration in minutes",
+      "travel_km": "Shortest distance (km) between first and last lightning locations in parent cluster",
+      "missing_peak_minutes": "Total minutes of missing data overlapping \u00b12.5 min around peak_datetime",
+      "masked_minute_counts": "Lightning group counts per minute (\u201360\u2026+60) with missing intervals masked as null"
+    },
+    "type": "Storm catalogue summary statistics",
+    "datetime": "2026-03-05T17:55:40.399594Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/storm-data/gdf_summary.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lightning-clusters"
+}

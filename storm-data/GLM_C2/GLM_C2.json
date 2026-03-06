@@ -1,0 +1,106 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "GLM_C2",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.99993896484375,
+          -67.62405395507812
+        ],
+        [
+          179.99993896484375,
+          67.62464904785156
+        ],
+        [
+          -179.99989318847656,
+          67.62464904785156
+        ],
+        [
+          -179.99989318847656,
+          -67.62405395507812
+        ],
+        [
+          179.99993896484375,
+          -67.62405395507812
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -179.99989318847656,
+    -67.62405395507812,
+    179.99993896484375,
+    67.62464904785156
+  ],
+  "properties": {
+    "parquet:columns": {
+      "lightning_count_2p5": {
+        "long_name": "Lightning groups count per cluster within 2.5 km radius and \u00b12.5 min time window around each CPR sample",
+        "units": "1"
+      },
+      "lightning_count_5": {
+        "long_name": "Lightning groups count per cluster within 5 km radius and \u00b15 min time window around each CPR sample",
+        "units": "1"
+      },
+      "cpr": {
+        "long_name": "EarthCARE CPR sample index"
+      },
+      "cluster_id": {
+        "long_name": "Cluster identifier"
+      },
+      "latitude": {
+        "long_name": "CPR nadir latitude",
+        "units": "degrees_north"
+      },
+      "longitude": {
+        "long_name": "CPR nadir longitude",
+        "units": "degrees_east"
+      },
+      "time": {
+        "long_name": "CPR observation time"
+      },
+      "land_flag": {
+        "long_name": "CPR land/water flag",
+        "definition": "1 = land, 0 = not land",
+        "units": "1"
+      }
+    },
+    "source": "GLM",
+    "type": "Lightning Strikes along EarthCARE nadir track",
+    "datetime": "2026-03-05T17:55:25.840115Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/storm-data/GLM_C2.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lightning-clusters"
+}

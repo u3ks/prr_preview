@@ -1,0 +1,79 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "gdf_evolution",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          177.809906,
+          -55.922791
+        ],
+        [
+          177.809906,
+          60.501602
+        ],
+        [
+          -175.814148,
+          60.501602
+        ],
+        [
+          -175.814148,
+          -55.922791
+        ],
+        [
+          177.809906,
+          -55.922791
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -175.814148,
+    -55.922791,
+    177.809906,
+    60.501602
+  ],
+  "properties": {
+    "parquet:columns": {
+      "orbit_frame": "Orbit/frame identifier of the EarthCARE overpass",
+      "parent_cluster_id": "Parent lightning cluster identifier",
+      "cluster_id": "Lightning cluster identifier",
+      "peak_datetime": "Time of CPR sample with maximum lightning activity"
+    },
+    "type": "Storm catalogue evolution statistics",
+    "datetime": "2026-03-05T17:55:40.611771Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Clusters"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/storm-data/gdf_evolution.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lightning-clusters"
+}
